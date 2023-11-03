@@ -17,12 +17,10 @@ public class TowerHp : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D collision) // 레이어로 충돌을 인식할려 했으나 istrigger를 쓰면 충돌감지 안됨
     {
-        if (other.gameObject.name == "Unit")
-        {
-            value -= curHp;
-        }
+        value -= curHp;
+        
     }
 
     // Update is called once per frame
