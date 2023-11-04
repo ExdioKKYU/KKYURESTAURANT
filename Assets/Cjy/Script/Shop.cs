@@ -12,6 +12,8 @@ public class Shop : MonoBehaviour
     public float Timer; //타이머
     private bool TimeSet; // 타이머 작동여부
 
+    public GameObject Recall;
+
     void Start()
     {
         TimeSet = true;
@@ -24,7 +26,7 @@ public class Shop : MonoBehaviour
         if (TimeSet == true) // TimeSet이 True면
         {
             Timer += Time.deltaTime; // 타이머가 작동합니다.
-            if (Timer > 1.0f) // 1초가 지나면
+            if (Timer > 2.0f) // 1초가 지나면
             {
                 Timer = 0;
                 CoinInt += 100f;
@@ -44,6 +46,8 @@ public class Shop : MonoBehaviour
         {
             Debug.Log("아무거나");
             CoinInt -= 100f; // CoinInt가 100 줌
+
+            Recall.GetComponent<RecallUnit>().playerrecall();
         }
     }
 
