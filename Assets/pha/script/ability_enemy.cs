@@ -10,6 +10,8 @@ public class ability_enemy : MonoBehaviour
     public float AT_sp_e;
     public float range_e;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,6 @@ public class ability_enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
