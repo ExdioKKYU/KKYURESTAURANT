@@ -9,7 +9,7 @@ public class TowerHp : MonoBehaviour
 
     public float value;
 
-    // Start is called before the first frame update
+   
     void Start()
     {
         value = maxHp;
@@ -23,7 +23,7 @@ public class TowerHp : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (value == 0f)
