@@ -10,7 +10,7 @@ public class UnitMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 4.0f;
+        moveSpeed = 2.0f;
         speed = 0;
         rangeUnit = 6.5f;      //유닛의 사거리에 따른 스크립트 받아오기
     }
@@ -19,20 +19,22 @@ public class UnitMove : MonoBehaviour
     void Update()
     {
         // EnemyInit를 가지고 있는 모든 오브젝트를 찾음
-        EnemyInit floatCloseEnemy = GameObject.FindObjectOfType <EnemyInit> ();
+        EnemyInit floatCloseEnemy = GameObject.FindObjectOfType<EnemyInit>();
 
         //EnemyInit를 가지고 있는 오브젝트와의 거리를 계산
-        float closeDistance = Vector3.Distance(transform.position, floatCloseEnemy.transform.position);
+        float closeDistanceX = Mathf.Abs(transform.position.x - floatCloseEnemy.transform.position.x);
+        float closeDistanceY = Mathf.Abs(transform.position.y - floatCloseEnemy.transform.position.y);
 
         //EnemyInit를 가지고 있는 오브젝트와의 거리와 나의 사거리를 비교해 이동
-        if (closeDistance <= rangeUnit)
+        if (closeDistanceX <= rangeUnit)
         {
-            speed = 0;
+            speed = 0.0f;
         }
-        if (closeDistance >= rangeUnit)
+        if (closeDistanceX >= rangeUnit)
         {
             speed = moveSpeed;
         }
+
         transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 }
