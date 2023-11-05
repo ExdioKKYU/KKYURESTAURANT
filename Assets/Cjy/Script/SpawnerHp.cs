@@ -2,31 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerHp : MonoBehaviour
+public class SpawnerHp : MonoBehaviour
 {
     private float maxHp = 10f;
     private float curHp = 1f;
 
-    public float value;
+    public float Enemyvalue;
 
-   
+    // Start is called before the first frame update
     void Start()
     {
-        value = maxHp;
+        Enemyvalue = maxHp;
 
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision) // 레이어로 충돌을 인식할려 했으나 istrigger를 쓰면 충돌감지 안됨
     {
-        value -= curHp;
-        
+        Enemyvalue -= curHp;
+
     }
 
-    
+    // Update is called once per frame
     void Update()
     {
-        if (value == 0f)
+        if (Enemyvalue == 0f)
         {
             Destroy(gameObject);
         }
