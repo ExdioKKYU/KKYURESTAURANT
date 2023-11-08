@@ -26,7 +26,7 @@ public class Shop : MonoBehaviour
         if (TimeSet == true) // TimeSet이 True면
         {
             Timer += Time.deltaTime; // 타이머가 작동합니다.
-            if (Timer > 2.0f) // 1초가 지나면
+            if (Timer > 1.0f) // 1초가 지나면
             {
                 Timer = 0;
                 CoinInt += 100f;

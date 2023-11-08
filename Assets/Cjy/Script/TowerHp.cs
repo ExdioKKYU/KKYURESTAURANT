@@ -9,15 +9,18 @@ public class TowerHp : MonoBehaviour
 
     public float value;
 
-   
+    int playerLayer;
+
+
     void Start()
     {
         value = maxHp;
 
+        playerLayer = LayerMask.NameToLayer("Player");
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision) // 레이어로 충돌을 인식할려 했으나 istrigger를 쓰면 충돌감지 안됨
+    private void OnTriggerEnter2D(Collider2D other)
     {
         value -= curHp;
         
@@ -30,5 +33,8 @@ public class TowerHp : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Physics2D.IgnoreLayerCollision(playerLayer, playerLayer, true);
+
     }
 }
