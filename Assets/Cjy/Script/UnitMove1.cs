@@ -9,6 +9,8 @@ public class UnitMove1 : MonoBehaviour
 
     public GameObject playerbulletprefab;
 
+    int playerLayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +19,15 @@ public class UnitMove1 : MonoBehaviour
 
         Destroy(gameObject, 8f);
 
+        playerLayer = LayerMask.NameToLayer("player");
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void playerattack()

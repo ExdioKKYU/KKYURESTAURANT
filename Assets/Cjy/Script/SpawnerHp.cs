@@ -9,26 +9,30 @@ public class SpawnerHp : MonoBehaviour
 
     public float Enemyvalue;
 
-    // Start is called before the first frame update
+    int enemyLayer;
+
     void Start()
     {
         Enemyvalue = maxHp;
 
+        enemyLayer = LayerMask.NameToLayer("Enemy");
+
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision) // 레이어로 충돌을 인식할려 했으나 istrigger를 쓰면 충돌감지 안됨
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Enemyvalue -= curHp;
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Enemyvalue == 0f)
         {
             Destroy(gameObject);
         }
+
+        Physics2D.IgnoreLayerCollision(enemyLayer, enemyLayer, true);
     }
 }

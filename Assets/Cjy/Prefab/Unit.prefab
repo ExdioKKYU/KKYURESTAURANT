@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6025029259933486186}
   - component: {fileID: 1576841096477243471}
   - component: {fileID: -4505348280624337216}
-  - component: {fileID: -1033592835621818841}
+  - component: {fileID: -8616359661185016816}
   m_Layer: 6
   m_Name: Unit
   m_TagString: Untagged
@@ -143,7 +143,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -159,7 +159,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-1033592835621818841
+--- !u!114 &-8616359661185016816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,4 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  playerbulletprefab: {fileID: 3208500343012409441}
+  playerbulletprefab: {fileID: 0}
