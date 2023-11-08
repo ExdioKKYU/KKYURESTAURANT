@@ -7,47 +7,111 @@ public class ability : MonoBehaviour
     public float HP;         // 체력
     public float ATK;        // 공격력
     public float DEF;        // 방어력
-    public float AT_sp;      // 공격속도
-    public float range;      // 사정 거리
 
-    private bool attack;
-    private float my_at_sp;
-    
-    public GameObject str_Prefab;
-    public Transform pos;
+    GameObject flying_F_e;
+    GameObject noodle_e;
+    GameObject sotsot_e;
+    GameObject rtbk_e;
+
+    GameObject obj;
 
     // Start is called before the first frame update
     void Start()
     {
-        my_at_sp = 0.0f;
-
-        attack = false;
+        flying_F_e = GameObject.Find("Frying_flour_enemy");
+        noodle_e = GameObject.Find("Noodle_enemy");
+        sotsot_e = GameObject.Find("Sotteok_Sotteok_enemy");
+        rtbk_e = GameObject.Find("Laboki_enemy");
     }
 
     // Update is called once per frame
     void Update()
     {
-        my_at_sp += Time.deltaTime;     // 공격속도 딜레이 계산
-
-        ability_enemy floatCloseEnemy = GameObject.FindObjectOfType<ability_enemy>();
-
-        //해당 스크립트를 가지고 있는 오브젝트와의 거리를 계산
-        float closeDistance = Vector3.Distance(transform.position, floatCloseEnemy.transform.position);
-
-        //해당 스크립트를 가지고 있는 오브젝트와의 거리와 나의 사거리를 비교해 공격 가능 여부 결정
-        if (closeDistance <= range)
+        if (HP <= 0)   //체력이 0이 되면 사라짐
         {
-            attack = true;
+            Destroy(gameObject);
         }
-        else
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.gameObject.name == "shot1_e(Clone)")   //튀김가루
+        //부딪힌 객체의 태그를 비교해서 총알인지 판단합니다.
         {
-            attack = false;
+            // 체력 - (적의 공격력 - 자신의 방어력)
+            HP -= (flying_F_e.GetComponent<ability_enemy>().ATK_e - DEF);
+
+            //총알을 파괴합니다.
+            Destroy(other.gameObject);
         }
 
-        if (attack == true && my_at_sp >= AT_sp)    //사거리 안에 적이 있고 공격속도를 충족하면 공격
+        if (other.gameObject.name == "shot2_e(Clone)")   //면
         {
-            GameObject str_shot = Instantiate(str_Prefab, pos.position, transform.rotation);
-            my_at_sp = 0.0f;
+            HP -= (noodle_e.GetComponent<ability_enemy>().ATK_e - DEF);
+            Destroy(other.gameObject);
         }
+
+        if (other.gameObject.name == "shot3_e(Clone)")   //소떡소떡
+        {
+            HP -= (sotsot_e.GetComponent<ability_enemy>().ATK_e - DEF);
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.name == "shot4_e(Clone)")   //라볶이
+        {
+            HP -= (rtbk_e.GetComponent<ability_enemy>().ATK_e - DEF);
+            Destroy(other.gameObject);
+        }
+    }
+
+    public void short_hurt(int x)
+    {
+        switch (x)
+        {
+            case 1:     //밥
+
+                obj = GameObject.Find("Bob_enemy");
+                break;
+
+            case 2:     //돼지고기
+
+                obj = GameObject.Find("Pork_enemy");
+                break;
+
+            case 3:     //김
+                break;
+            case 4:     //고구마
+                break;
+            case 5:     //소시지
+                break;
+            case 6:     //당근
+                break;
+            case 7:     //떡
+                break;
+            case 8:     //비법소스
+                break;
+            case 9:     //계란
+                break;
+            case 10:    //오뎅
+                break;
+            case 11:    //김밥
+                break;
+            case 12:    //돈까스
+                break;
+            case 13:    //고구마튀김
+                break;
+            case 14:    //꼬마김밥
+                break;
+            case 15:    //떡볶이
+                break;
+            case 16:    //오므라이스
+                break;
+            case 17:    //라면
+                break;
+
+        }
+
+        HP -= (obj.GetComponent<ability_enemy>().ATK_e - (obj.GetComponent<ability_enemy>().ATK_e * DEF));
     }
 }
