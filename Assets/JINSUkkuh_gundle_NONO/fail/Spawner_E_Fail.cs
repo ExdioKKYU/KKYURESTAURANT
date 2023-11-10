@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class Spawner_E : MonoBehaviour
+public class Spawner_E_Fail : MonoBehaviour
 {
     public Transform pos;
     public GameObject unit1;
