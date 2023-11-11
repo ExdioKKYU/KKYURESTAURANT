@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8881980065496902497}
   - component: {fileID: 6805172272051366303}
   - component: {fileID: 2655634869324988942}
-  - component: {fileID: 2122192160352750771}
+  - component: {fileID: -3026865285444597940}
   m_Layer: 7
   m_Name: PlayerUnit
   m_TagString: Untagged
@@ -143,7 +143,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -159,7 +159,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2122192160352750771
+--- !u!114 &-3026865285444597940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

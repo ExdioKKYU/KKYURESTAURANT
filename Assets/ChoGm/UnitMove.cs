@@ -6,35 +6,39 @@ public class UnitMove : MonoBehaviour
 {
     private float moveSpeed;
     private float speed;
-    private float rangeUnit;   //유닛의 사거리에 따른 스크립트 받아오기
+    private float rangeUnit;   // 유닛의 사거리에 따른 스크립트 받아오기
+
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 2.0f;
+        moveSpeed = 3.0f;
         speed = 0;
-        rangeUnit = 6.5f;      //유닛의 사거리에 따른 스크립트 받아오기
+        rangeUnit = 5.0f;      // 유닛의 사거리에 따른 스크립트 받아오기
     }
 
     // Update is called once per frame
     void Update()
     {
         // EnemyInit를 가지고 있는 모든 오브젝트를 찾음
-        EnemyInit floatCloseEnemy = GameObject.FindObjectOfType<EnemyInit>();
+        EnemyInit[] closeUnits = FindObjectsOfType<EnemyInit>();
 
-        //EnemyInit를 가지고 있는 오브젝트와의 거리를 계산
-        float closeDistanceX = Mathf.Abs(transform.position.x - floatCloseEnemy.transform.position.x);
-        float closeDistanceY = Mathf.Abs(transform.position.y - floatCloseEnemy.transform.position.y);
+        // Set the default speed
+        speed = moveSpeed;
 
-        //EnemyInit를 가지고 있는 오브젝트와의 거리와 나의 사거리를 비교해 이동
-        if (closeDistanceX <= rangeUnit)
+        foreach (EnemyInit unit in closeUnits)
         {
-            speed = 0.0f;
-        }
-        if (closeDistanceX >= rangeUnit)
-        {
-            speed = moveSpeed;
+            // 현재 유닛과 각 적의 거리를 계산
+            float distanceX = Mathf.Abs(transform.position.x - unit.transform.position.x);
+            float distanceY = Mathf.Abs(transform.position.y - unit.transform.position.y);
+
+            // X 축 거리가 사거리 이내이고 Y 축 거리가 0일 때만 속도를 0으로 설정
+            if (distanceX <= rangeUnit && Mathf.Approximately(distanceY, 0))
+            {
+                speed = 0;
+            }
         }
 
+        // Move the unit based on the calculated speed
         transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 }
