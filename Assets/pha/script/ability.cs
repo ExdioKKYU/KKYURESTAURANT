@@ -15,6 +15,8 @@ public class ability : MonoBehaviour
 
     GameObject obj;
 
+    SpriteRenderer sprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,8 @@ public class ability : MonoBehaviour
         noodle_e = GameObject.Find("Noodle_enemy");
         sotsot_e = GameObject.Find("Sotteok_Sotteok_enemy");
         rtbk_e = GameObject.Find("Laboki_enemy");
+
+        sprite = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,8 @@ public class ability : MonoBehaviour
         {
             // 체력 - (적의 공격력 - 자신의 방어력)
             HP -= (flying_F_e.GetComponent<ability_enemy>().ATK_e - DEF);
+            sprite.color = Color.red;   //공격당하면 색이 변함
+            Invoke("color", 0.2f);
 
             //총알을 파괴합니다.
             Destroy(other.gameObject);
@@ -113,5 +119,12 @@ public class ability : MonoBehaviour
         }
 
         HP -= (obj.GetComponent<ability_enemy>().ATK_e - (obj.GetComponent<ability_enemy>().ATK_e * DEF));
+        sprite.color = Color.red;   //공격당하면 색이 변함
+        Invoke("color", 0.2f);
+    }
+
+    public void color()
+    {
+        sprite.color = Color.white;
     }
 }

@@ -1,0 +1,1205 @@
+fileFormatVersion: 2
+guid: f967883f06be3fd49863762dc2971132
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fce05ede80a8b49b0a4820ce5d2098
+      internalID: -1746539681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 18000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97523f18f9cc1274fb4a8c76ac30491f
+      internalID: -1052908637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 18000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a333f031585a4da4c98a3c09d8c1d18a
+      internalID: 1314311206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 18000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f6d3fa11a32bb4abeb19b5756be053
+      internalID: -233340652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 18000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74968e557912cb04c971445c5b28f810
+      internalID: 751056949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 15000
+        y: 18000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed46f1dc10a269468ee410ff59a233d
+      internalID: 316320774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 18000
+        y: 18000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd9b1f5a3633504295644909026e456
+      internalID: 1957110732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1229cc5a1654c24ea216e5b8fc54411
+      internalID: -62636819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 15000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ce46e2f1913914a9969e81f909704b
+      internalID: 1946315438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 15000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56e54a5fc221a54bad56fe58b029564
+      internalID: -688263261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 15000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21af508349943b4687af6108f58a699
+      internalID: 1511899031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 15000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be1d1b8110fba64c86fb611ff53414c
+      internalID: -1177928795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 15000
+        y: 15000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02821017f2da75f428d16e529b141317
+      internalID: -1571425932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 18000
+        y: 15000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051c5080dbdc24e4ebf17db1db8a89e5
+      internalID: 1183742646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2269cd59b473e0d4ba6ec6a78e1a22a6
+      internalID: 631075830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 12000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a5ac58c07134e478b8a2249f74e6a7
+      internalID: -1563674704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 12000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f47c13deeb7e914e870187f902d0ffe
+      internalID: 296434721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 12000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff042a34cabf914290cf6f310d5d5e7
+      internalID: -248815612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 12200
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44a633290056f647abacb0c3bb01486
+      internalID: 1888028966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 15000
+        y: 12000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2166db34122e864097942d608897ce5
+      internalID: 237258710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 18000
+        y: 12000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7847e8b021f04894786e71c97245cda9
+      internalID: 74023213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf91eca20b23eab4495453d7e5634ea0
+      internalID: -65808218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b5486c3c3999c46a1a54ba02a9ea14
+      internalID: 820425983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe79aff991e89a40b2fa2db90b2533d
+      internalID: -1782749970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51409c6089b70a43aa33c383be94882
+      internalID: -1826265722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4913a8873fb59242983c1893ae82591
+      internalID: -1778239964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 15000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec269d0b9b24bd45a9f864765d8989b
+      internalID: -566790724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 18000
+        y: 9000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e511f438fe0bd42bc71c2b5c6c8917
+      internalID: -991479208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7d746ea47bda647a69eea2d578faa3
+      internalID: -189837497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a230c03e813a7dd458313a6283efcf9d
+      internalID: 2016561587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921b729b963fbef4b9239309119cba51
+      internalID: 989383930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_31
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04787511d08587a47ab403ceae35f6f9
+      internalID: -1913682276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_32
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187bc025a17c9ad4292502ad03ac0ff9
+      internalID: -1003142315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 15000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cfb73ce3fa67948b2acb00e287be51
+      internalID: -1150167681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_34
+      rect:
+        serializedVersion: 2
+        x: 18000
+        y: 6000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b88201a4913be34b9eb849f9e7f3e38
+      internalID: -81883252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cceb9833997f144bdfbd2500bea645
+      internalID: -1870511619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_36
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c1fcd755032094ba495d6417252c5d
+      internalID: -1859520608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_37
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe3d45940c2b014892aff99bb95f2ca
+      internalID: 1858981590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_38
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c4e0d50a6d4b54aa7a414d384876da
+      internalID: -1263984836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_39
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759774ff07b96544eb6eb63e93d870f0
+      internalID: -444848172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_40
+      rect:
+        serializedVersion: 2
+        x: 15000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e324b04a77b5d45926ff85b024f029
+      internalID: -292100983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_41
+      rect:
+        serializedVersion: 2
+        x: 18000
+        y: 3000
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b09037e1bcda2f44b59c59e904b448a
+      internalID: 1379831097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4335fa93ff25408408d397803750794b
+      internalID: -1551599392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_43
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d61b722dd3c6d2408466bc2a394e38a
+      internalID: -903732102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_44
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2a04e6be2551b4c9df31aae08728cf
+      internalID: -595762336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_45
+      rect:
+        serializedVersion: 2
+        x: 9000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989172d300e612c48a7ed63c28adb2f2
+      internalID: -903409401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_46
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52bfdf3dfc77b649b7192668df4116d
+      internalID: -536014890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_47
+      rect:
+        serializedVersion: 2
+        x: 15000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73826402c4001694d95d0bf4f769a3c7
+      internalID: -2122015503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exdio_Graphic_Character_ing_rice_ani_sprite_48
+      rect:
+        serializedVersion: 2
+        x: 18000
+        y: 0
+        width: 3000
+        height: 3000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c480fce8560094a983ff5fb29f5403
+      internalID: -883794698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Exdio_Graphic_Character_ing_rice_ani_sprite_0: -1746539681
+      Exdio_Graphic_Character_ing_rice_ani_sprite_1: -1052908637
+      Exdio_Graphic_Character_ing_rice_ani_sprite_10: 1511899031
+      Exdio_Graphic_Character_ing_rice_ani_sprite_11: -1177928795
+      Exdio_Graphic_Character_ing_rice_ani_sprite_12: -1571425932
+      Exdio_Graphic_Character_ing_rice_ani_sprite_13: 1183742646
+      Exdio_Graphic_Character_ing_rice_ani_sprite_14: 631075830
+      Exdio_Graphic_Character_ing_rice_ani_sprite_15: -1563674704
+      Exdio_Graphic_Character_ing_rice_ani_sprite_16: 296434721
+      Exdio_Graphic_Character_ing_rice_ani_sprite_17: -248815612
+      Exdio_Graphic_Character_ing_rice_ani_sprite_18: 1888028966
+      Exdio_Graphic_Character_ing_rice_ani_sprite_19: 237258710
+      Exdio_Graphic_Character_ing_rice_ani_sprite_2: 1314311206
+      Exdio_Graphic_Character_ing_rice_ani_sprite_20: 74023213
+      Exdio_Graphic_Character_ing_rice_ani_sprite_21: -65808218
+      Exdio_Graphic_Character_ing_rice_ani_sprite_22: 820425983
+      Exdio_Graphic_Character_ing_rice_ani_sprite_23: -1782749970
+      Exdio_Graphic_Character_ing_rice_ani_sprite_24: -1826265722
+      Exdio_Graphic_Character_ing_rice_ani_sprite_25: -1778239964
+      Exdio_Graphic_Character_ing_rice_ani_sprite_26: -566790724
+      Exdio_Graphic_Character_ing_rice_ani_sprite_27: -991479208
+      Exdio_Graphic_Character_ing_rice_ani_sprite_28: -189837497
+      Exdio_Graphic_Character_ing_rice_ani_sprite_29: 2016561587
+      Exdio_Graphic_Character_ing_rice_ani_sprite_3: -233340652
+      Exdio_Graphic_Character_ing_rice_ani_sprite_30: 989383930
+      Exdio_Graphic_Character_ing_rice_ani_sprite_31: -1913682276
+      Exdio_Graphic_Character_ing_rice_ani_sprite_32: -1003142315
+      Exdio_Graphic_Character_ing_rice_ani_sprite_33: -1150167681
+      Exdio_Graphic_Character_ing_rice_ani_sprite_34: -81883252
+      Exdio_Graphic_Character_ing_rice_ani_sprite_35: -1870511619
+      Exdio_Graphic_Character_ing_rice_ani_sprite_36: -1859520608
+      Exdio_Graphic_Character_ing_rice_ani_sprite_37: 1858981590
+      Exdio_Graphic_Character_ing_rice_ani_sprite_38: -1263984836
+      Exdio_Graphic_Character_ing_rice_ani_sprite_39: -444848172
+      Exdio_Graphic_Character_ing_rice_ani_sprite_4: 751056949
+      Exdio_Graphic_Character_ing_rice_ani_sprite_40: -292100983
+      Exdio_Graphic_Character_ing_rice_ani_sprite_41: 1379831097
+      Exdio_Graphic_Character_ing_rice_ani_sprite_42: -1551599392
+      Exdio_Graphic_Character_ing_rice_ani_sprite_43: -903732102
+      Exdio_Graphic_Character_ing_rice_ani_sprite_44: -595762336
+      Exdio_Graphic_Character_ing_rice_ani_sprite_45: -903409401
+      Exdio_Graphic_Character_ing_rice_ani_sprite_46: -536014890
+      Exdio_Graphic_Character_ing_rice_ani_sprite_47: -2122015503
+      Exdio_Graphic_Character_ing_rice_ani_sprite_48: -883794698
+      Exdio_Graphic_Character_ing_rice_ani_sprite_5: 316320774
+      Exdio_Graphic_Character_ing_rice_ani_sprite_6: 1957110732
+      Exdio_Graphic_Character_ing_rice_ani_sprite_7: -62636819
+      Exdio_Graphic_Character_ing_rice_ani_sprite_8: 1946315438
+      Exdio_Graphic_Character_ing_rice_ani_sprite_9: -688263261
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
