@@ -12,12 +12,15 @@ public class unit_short_atk : MonoBehaviour
     private bool attack;
     private float my_at_sp;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         my_at_sp = 0.0f;
 
         attack = false;
+
     }
 
     // Update is called once per frame
@@ -45,6 +48,7 @@ public class unit_short_atk : MonoBehaviour
             FindTarget();
             my_at_sp = 0.0f;
         }
+
     }
 
     private void FindTarget()

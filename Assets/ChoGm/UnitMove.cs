@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class UnitMove : MonoBehaviour
 {
-    private float moveSpeed;
+    public float moveSpeed;
     private float speed;
-    private float rangeUnit;   // 유닛의 사거리에 따른 스크립트 받아오기
+    public float rangeUnit;   // 유닛의 사거리에 따른 스크립트 받아오기
 
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 3.0f;
-        speed = 0;
-        rangeUnit = 5.0f;      // 유닛의 사거리에 따른 스크립트 받아오기
+        speed = 0;    // 유닛의 사거리에 따른 스크립트 받아오기
     }
 
     // Update is called once per frame
