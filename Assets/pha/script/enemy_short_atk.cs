@@ -55,21 +55,29 @@ public class enemy_short_atk : MonoBehaviour
 
         foreach (ability enemy in enemies)
         {
+            // 현재 유닛과 적군 간의 거리를 계산
             float distance = Vector3.Distance(transform.position, enemy.transform.position);
+
+            // 적군과의 거리가 현재까지의 최소 거리보다 작다면 업데이트
             if (distance < closestDistance1)
             {
-                closestDistance1 = distance;
-                closestEnemy1 = enemy;
+                // 추가: 같은 열에 위치한지 확인
+                if (Mathf.Approximately(transform.position.y, enemy.transform.position.y))
+                {
+                    closestDistance1 = distance;
+                    closestEnemy1 = enemy;
+                }
             }
         }
-        // closestEnemy에 가장 가까운 오브젝트가 저장됩니다.
 
-        ability closestAbilityComponent = closestEnemy1.GetComponent<ability>();
+        // closestEnemy1에 가장 가까운 오브젝트가 저장됩니다.
+
+        // closestEnemy1가 null이 아니면서 ability 컴포넌트를 가지고 있는지 확인
+        ability closestAbilityComponent = closestEnemy1?.GetComponent<ability>();
         if (closestAbilityComponent != null)
         {
             closestAbilityComponent.short_hurt(num);
         }
-
-
     }
+
 }
