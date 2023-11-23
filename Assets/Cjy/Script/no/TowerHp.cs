@@ -2,37 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnerHp : MonoBehaviour
+public class TowerHp : MonoBehaviour
 {
     private float maxHp = 10f;
     private float curHp = 1f;
 
-    public float Enemyvalue;
+    public float value;
 
-    int enemyLayer;
+    int playerLayer;
+
 
     void Start()
     {
-        Enemyvalue = maxHp;
+        value = maxHp;
 
-        enemyLayer = LayerMask.NameToLayer("Enemy");
-
+        playerLayer = LayerMask.NameToLayer("Player");
     }
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Enemyvalue -= curHp;
+        value -= curHp;
+        Debug.Log("아군 기지 체력 감소");
 
     }
 
+    
     void Update()
     {
-        if (Enemyvalue == 0f)
+        if (value == 0f)
         {
             Destroy(gameObject);
         }
 
-        Physics2D.IgnoreLayerCollision(enemyLayer, enemyLayer, true);
+        Physics2D.IgnoreLayerCollision(playerLayer, playerLayer, true);
+
     }
 }

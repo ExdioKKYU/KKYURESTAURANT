@@ -17,7 +17,7 @@ public class UnitMove1 : MonoBehaviour
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerRigidbody.velocity = new Vector2(-speed, 0);
 
-        Destroy(gameObject, 8f);
+        Destroy(gameObject, 20f);
 
         playerLayer = LayerMask.NameToLayer("player");
 

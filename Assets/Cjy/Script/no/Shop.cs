@@ -31,7 +31,7 @@ public class Shop : MonoBehaviour
                 Timer = 0;
                 CoinInt += 100f;
                 
-                if (CoinInt == 2000f)
+                if (CoinInt >= 2000f)
                 {
                     TimeSet = false;
                 }
@@ -44,8 +44,9 @@ public class Shop : MonoBehaviour
     {
         if (CoinInt >= 100f) // CoinInt가 100이상이라면
         {
-            Debug.Log("아무거나");
+            Debug.Log("100원 차감");
             CoinInt -= 100f; // CoinInt가 100 줌
+            TimeSet = true;
 
             Recall.GetComponent<RecallUnit>().playerrecall();
         }
