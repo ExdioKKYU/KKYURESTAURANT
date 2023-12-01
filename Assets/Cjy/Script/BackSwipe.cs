@@ -7,6 +7,9 @@ public class BackSwipe : MonoBehaviour
 {
     private Vector3 touchStart;
     private float zDistance;
+    private float minX = -29f;  // x 좌표의 최소값
+    private float maxX = 29f;   // x 좌표의 최대값
+    
 
     void Start()
     {
@@ -15,6 +18,7 @@ public class BackSwipe : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
             if (IsMouseInAllowedArea(Input.mousePosition))
@@ -29,6 +33,12 @@ public class BackSwipe : MonoBehaviour
                 Vector3 direction = touchStart - GetWorldPositionOnPlane(Input.mousePosition, zDistance);
                 direction.y = 0f; // y축 이동 방지
                 Camera.main.transform.position += direction;
+
+                // x 좌표에 대한 제한
+                Vector3 newPosition = Camera.main.transform.position + direction;
+                newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
+
+                Camera.main.transform.position = newPosition;
             }
         }
     }
