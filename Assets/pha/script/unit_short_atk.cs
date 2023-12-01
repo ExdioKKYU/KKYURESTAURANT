@@ -12,15 +12,16 @@ public class unit_short_atk : MonoBehaviour
     private bool attack;
     private float my_at_sp;
 
-
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         my_at_sp = 0.0f;
 
         attack = false;
-
     }
 
     // Update is called once per frame
@@ -45,10 +46,14 @@ public class unit_short_atk : MonoBehaviour
 
         if (attack == true && my_at_sp >= AT_sp)    //사거리 안에 적이 있고 공격속도를 충족하면 공격
         {
+            animator.SetBool("Attack", true);
             FindTarget();
             my_at_sp = 0.0f;
         }
-
+        else
+        {
+            animator.SetBool("Attack", false);
+        }
     }
 
     private void FindTarget()
