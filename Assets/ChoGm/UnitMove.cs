@@ -8,15 +8,20 @@ public class UnitMove : MonoBehaviour
     private float speed;
     public float rangeUnit;   // 유닛의 사거리에 따른 스크립트 받아오기
 
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         speed = 0;    // 유닛의 사거리에 따른 스크립트 받아오기
     }
 
     // Update is called once per frame
     void Update()
     {
+
         // EnemyInit를 가지고 있는 모든 오브젝트를 찾음
         EnemyInit[] closeUnits = FindObjectsOfType<EnemyInit>();
 
@@ -35,8 +40,14 @@ public class UnitMove : MonoBehaviour
                 speed = 0;
             }
         }
-
-        // Move the unit based on the calculated speed
+        if (speed == 0)
+        {
+            animator.SetBool("Walk", false);
+        }
+        if (speed != 0)
+        {
+            animator.SetBool("Walk", true);
+        }
         transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 }

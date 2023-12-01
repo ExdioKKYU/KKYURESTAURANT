@@ -13,9 +13,13 @@ public class enemy_long_atk : MonoBehaviour
     public GameObject str_Prefab;
     public Transform pos;
 
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         my_at_sp = 0.0f;
         attack = false;
     }
@@ -41,11 +45,13 @@ public class enemy_long_atk : MonoBehaviour
                 if (closeDistance <= range_e)
                 {
                     attack = true;
+                    animator.SetBool("Attack", true);
                     break; // 이미 하나의 유닛에 대해 공격이 결정되었으므로 루프를 종료합니다.
                 }
                 else
                 {
                     attack = false;
+                    animator.SetBool("Attack", false);
                 }
             }
         }
