@@ -10,83 +10,58 @@ public class enemy_short_atk : MonoBehaviour
     public int num;       // 유닛들 중 번호를 매겨 어느 유닛인지 판별 위함
 
     private bool attack;
-    private float e_at_sp;
+    private float my_at_sp;
 
     Animator animator;
+    Transform floatCloseEnemy; // 타입을 Transform으로 변경
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-
-        e_at_sp = 0.0f;
-
+        my_at_sp = 0.0f;
         attack = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        e_at_sp += Time.deltaTime;     // 공격속도 딜레이 계산
+        my_at_sp += Time.deltaTime; // 공격속도 딜레이 계산
 
-        ability floatCloseEnemy1 = GameObject.FindObjectOfType<ability>();
+      
 
-        //해당 스크립트를 가지고 있는 오브젝트와의 거리를 계산
-        float closeDistance1 = Vector3.Distance(transform.position, floatCloseEnemy1.transform.position);
+        ability[] floatCloseEnemies = GameObject.FindObjectsOfType<ability>();
 
-        //해당 스크립트를 가지고 있는 오브젝트와의 거리와 나의 사거리를 비교해 공격 가능 여부 결정
-        if (closeDistance1 <= range_e)
+        // 모든 적에 대해 반복
+        foreach (ability floatCloseEnemy in floatCloseEnemies)
         {
-            attack = true;
-        }
-        else
-        {
-            attack = false;
-        }
-
-        if (attack == true && e_at_sp >= AT_sp_e)    //사거리 안에 적이 있고 공격속도를 충족하면 공격
-        {
-            animator.SetBool("Attack", true);
-            FindTarget1();
-            e_at_sp = 0.0f;
-        }
-        else
-        {
-            animator.SetBool("Attack", false);
-        }
-    }
-
-    private void FindTarget1()
-    {
-        ability[] enemies = GameObject.FindObjectsOfType<ability>();
-        float closestDistance1 = float.MaxValue;
-        ability closestEnemy1 = null;
-
-        foreach (ability enemy in enemies)
-        {
-            // 현재 유닛과 적군 간의 거리를 계산
-            float distance = Vector3.Distance(transform.position, enemy.transform.position);
-
-            // 적군과의 거리가 현재까지의 최소 거리보다 작다면 업데이트
-            if (distance < closestDistance1)
+            // 추가: 같은 열에 위치한지 확인
+            if (Mathf.Approximately(transform.position.y, floatCloseEnemy.transform.position.y))
             {
-                // 추가: 같은 열에 위치한지 확인
-                if (Mathf.Approximately(transform.position.y, enemy.transform.position.y))
+                // 해당 스크립트를 가지고 있는 오브젝트와의 거리를 계산
+                float closeDistance = Vector3.Distance(transform.position, floatCloseEnemy.transform.position);
+
+                //해당 스크립트를 가지고 있는 오브젝트와의 거리와 나의 사거리를 비교해 공격 가능 여부 결정
+                if (closeDistance <= range_e)
                 {
-                    closestDistance1 = distance;
-                    closestEnemy1 = enemy;
+                    attack = true;
+                    animator.SetBool("Attack", true);
+                    this.floatCloseEnemy = floatCloseEnemy.transform; // floatCloseEnemy에 Transform 할당
+                    break; // 이미 하나의 유닛에 대해 공격이 결정되었으므로 루프를 종료합니다.
                 }
+                else
+                {
+                    attack = false;
+                    animator.SetBool("Attack", false);
+                }
+            }
+            if (attack && my_at_sp >= AT_sp_e)
+            {
+                floatCloseEnemy.short_hurt(num);
+
             }
         }
 
-        // closestEnemy1에 가장 가까운 오브젝트가 저장됩니다.
-
-        // closestEnemy1가 null이 아니면서 ability 컴포넌트를 가지고 있는지 확인
-        ability closestAbilityComponent = closestEnemy1?.GetComponent<ability>();
-        if (closestAbilityComponent != null)
-        {
-            closestAbilityComponent.short_hurt(num);
-        }
+       
     }
-
 }
