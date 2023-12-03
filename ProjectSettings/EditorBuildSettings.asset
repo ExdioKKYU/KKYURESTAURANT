@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kjs.unity
     guid: 9ad70c251ac3a224ab15dcf71f85cbaf
+  - enabled: 1
+    path: Assets/Scenes/ChoGMScene.unity
+    guid: c2723b30100d9fe4397861474cea035e
   m_configObjects: {}

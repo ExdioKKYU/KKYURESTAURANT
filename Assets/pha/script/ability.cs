@@ -115,12 +115,19 @@ public class ability : MonoBehaviour
                 break;
             case 17:    //라면
                 break;
-
+            default:
+                // 기본적으로 할당할 오브젝트가 없을 경우 null로 설정하거나, 다른 처리를 수행할 수 있습니다.
+                obj = null;
+                break;
         }
 
-        HP -= (obj.GetComponent<ability_enemy>().ATK_e - (obj.GetComponent<ability_enemy>().ATK_e * DEF));
-        sprite.color = Color.red;   //공격당하면 색이 변함
-        Invoke("color", 0.2f);
+        if (obj != null)
+        {
+            HP -= (obj.GetComponent<ability_enemy>().ATK_e - (obj.GetComponent<ability_enemy>().ATK_e * DEF));
+            sprite.color = Color.red;   //공격당하면 색이 변함
+            Invoke("color", 0.2f);
+        }
+        
     }
 
     public void color()
