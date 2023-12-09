@@ -25,10 +25,4 @@ public class PlayerUnitMove1 : MonoBehaviour
     {
 
     }
-
-    public void playerattack()
-    {
-        GameObject playerbullet
-            = Instantiate(playerbulletprefab, transform.position, Quaternion.identity);
-    }
 }
