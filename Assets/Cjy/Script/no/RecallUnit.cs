@@ -10,7 +10,7 @@ public class RecallUnit : MonoBehaviour
     public void playerrecall()
     {
         GameObject playerbullet
-              = Instantiate(playerbulletprefab, transform.position, Quaternion.identity);
+            = Instantiate(playerbulletprefab, playerbulletprefab.transform.position = new Vector3(-8f, 3.1f), Quaternion.identity);
 
     }
 
