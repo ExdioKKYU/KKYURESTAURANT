@@ -123,17 +123,21 @@ public class ability_enemy : MonoBehaviour
                 obj = null;
                 break;
         }
+        Debug.Log("아군 공격1");
 
         if (obj != null)
         {
+            Debug.Log("아군 공격2");
             HP_e -= (obj.GetComponent<ability>().ATK - (obj.GetComponent<ability>().ATK * DEF_e));
             sprite.color = Color.red;
             Invoke("color", 0.2f);
         }
+        
     }
 
     public void color()
     {
         sprite.color = Color.cyan;
+        Debug.Log("아군 공격3");
     }
 }
