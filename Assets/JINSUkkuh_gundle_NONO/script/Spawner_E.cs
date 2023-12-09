@@ -58,18 +58,17 @@ public class Spawner_E : MonoBehaviour
     private int our_unit2 = 0;
     private int our_unit3 = 0;
 
+    private float[] original_p = new float[5];
+
     private float timeAfterSpawn;
 
     // Start is called before the first frame update
     void Start()
     {
+        change(original_p, p_percentages);
+
         cool = 3;
         timeAfterSpawn = 0f;
-        float rt = p_percentages[0];
-        float gt = p_percentages[1];
-        float cd = p_percentages[2];
-        float ld = p_percentages[3];
-        float sp = p_percentages[4];
     }
 
     // Update is called once per frame
@@ -97,6 +96,8 @@ public class Spawner_E : MonoBehaviour
                 //2. 결정된 유닛 포지션의 적군을 확률에 따라 소환
                 Instantiate(rush_tnak[GetRandom(rush_tnak_percentage, rush_tnak_percentage.Length, rush_tnak.Length)], pos.position, transform.rotation);
 
+                change(p_percentages, original_p);
+
                 //3. 다음번 소환에 같은 유닛 포지션이 연속으로 여러변 소환되는 것을 방지 하기위해 유닛 포지션별 확률을 조정
                 //Percents_Adj(unit_position, rt, gt, cd, ld, sp);
             }
@@ -104,25 +105,29 @@ public class Spawner_E : MonoBehaviour
             else if (unit_position == 1)
             {
                 Instantiate(guard_tnak[GetRandom(guard_tnak_percentage, guard_tnak_percentage.Length, guard_tnak.Length)], pos.position, transform.rotation);
-                //Percents_Adj(unit_position);
+                change(p_percentages, original_p);
+                Percents_Adj(unit_position);
             }
 
             else if (unit_position == 2)
             {
                 Instantiate(close_deal[GetRandom(close_deal_percentage, close_deal_percentage.Length, close_deal.Length)], pos.position, transform.rotation);
-                //Percents_Adj(unit_position);
+                change(p_percentages, original_p);
+                Percents_Adj(unit_position);
             }
 
             else if (unit_position == 3)
             {
                 Instantiate(long_deal[GetRandom(long_deal_percentage, long_deal_percentage.Length, long_deal.Length)], pos.position, transform.rotation);
-                //Percents_Adj(unit_position);
+                change(p_percentages, original_p);
+                Percents_Adj(unit_position);
             }
 
             else
             {
                 Instantiate(support[GetRandom(support_percentage, support_percentage.Length, support.Length)], pos.position, transform.rotation);
-                //Percents_Adj(unit_position);
+                change(p_percentages, original_p);
+                Percents_Adj(unit_position);
             }
 
             //쿨타임 정하기
@@ -171,34 +176,33 @@ public class Spawner_E : MonoBehaviour
     //유닛 포지션별 확률을 조정하는 함수
     //이것과 비슷한 형식으로 적 기지 체력이 일정 이하일 결우 고 코스트의 강한 유닛의 출현 빈도가 높도록 확률 설정 가능 (상의중)
 
-    //private void change(float[] save_p_percentages, float[] p_percentages)
-    //{
-    //    save_p_percentages[0] = p_percentages[0];//돌격형 탱커
-    //    save_p_percentages[1] = p_percentages[1];//방어형 탱커
-    //    save_p_percentages[2] = p_percentages[2];//근거리 딜러
-    //    save_p_percentages[3] = p_percentages[3];//원거리 딜러
-    //    save_p_percentages[4] = p_percentages[4];//서포터
-    //}
+    private void change(float[] original_p, float[] p_percentages)
+    {
+        for(int i = 0; i < 5;  i++)
+        {
+            original_p[i] = p_percentages[i];
+        }
+    }
 
-    //private void Percents_Adj(int i, float[] save_p_percentages)
-    //{
-    //    float a = 0, b = 0, c = 0, d = 0, e = 0;
-    //    if (i == 0)
-    //        a = 0.6f;
-    //    else if (i == 1)
-    //        b = 0.6f;
-    //    else if (i == 2)
-    //        c = 0.6f;
-    //    else if (i == 3)
-    //        d = 0.6f;
-    //    else
-    //        e = 0.6f;
-    //    p_percentages[0] = save_p_percentages[0] * a;//돌격형 탱커
-    //    p_percentages[1] = save_p_percentages[1] * b;//방어형 탱커
-    //    p_percentages[2] = save_p_percentages[2] * c;//근거리 딜러
-    //    p_percentages[3] = save_p_percentages[3] * d;//원거리 딜러
-    //    p_percentages[4] = save_p_percentages[4] * e;//서포터
-    //}
+    private void Percents_Adj(int i)
+    {
+        float a = 1, b = 1, c = 1, d = 1, e = 1;
+        if (i == 0)
+            a = 0.6f;
+        else if (i == 1)
+            b = 0.6f;
+        else if (i == 2)
+            c = 0.6f;
+        else if (i == 3)
+            d = 0.6f;
+        else
+            e = 0.6f;
+        p_percentages[0] = p_percentages[0] * a;//돌격형 탱커
+        p_percentages[1] = p_percentages[1] * b;//방어형 탱커
+        p_percentages[2] = p_percentages[2] * c;//근거리 딜러
+        p_percentages[3] = p_percentages[3] * d;//원거리 딜러
+        p_percentages[4] = p_percentages[4] * e;//서포터
+    }
 
     //확률 계산기 함수
 
