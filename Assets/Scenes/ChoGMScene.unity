@@ -831,8 +831,8 @@ GameObject:
   - component: {fileID: 342898343}
   - component: {fileID: 342898342}
   - component: {fileID: 342898341}
-  - component: {fileID: 342898340}
   - component: {fileID: 342898339}
+  - component: {fileID: 342898348}
   m_Layer: 0
   m_Name: 'Bob '
   m_TagString: Untagged
@@ -861,21 +861,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &342898340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342898338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AT_sp: 1
-  range: 1.5
-  num: 1
 --- !u!114 &342898341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 45
+  HP: 900
   ATK: 7
   DEF: 0
 --- !u!114 &342898342
@@ -1056,6 +1041,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &342898348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342898338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ad7b4e248bc864bb8a39a1994f4870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp: 1
+  range: 10
+  num: 1
 --- !u!1 &356152259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,8 +1071,8 @@ GameObject:
   - component: {fileID: 356152264}
   - component: {fileID: 356152263}
   - component: {fileID: 356152262}
-  - component: {fileID: 356152261}
   - component: {fileID: 356152260}
+  - component: {fileID: 356152269}
   m_Layer: 0
   m_Name: Bob_enemy
   m_TagString: Untagged
@@ -1101,21 +1101,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &356152261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 356152259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AT_sp_e: 1
-  range_e: 1.5
-  num: 1
 --- !u!114 &356152262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,7 +1256,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1315f89815a29b243b8798c6be90499d, type: 3}
-  m_Color: {r: 0.9339623, g: 0.15128744, b: 0.110137045, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1296,6 +1281,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &356152269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356152259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c507b706cd2c50747ba63818d2ae28bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp_e: 1
+  range_e: 10
+  num: 1
 --- !u!1 &359343616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,8 +2027,8 @@ GameObject:
   - component: {fileID: 781625205}
   - component: {fileID: 781625204}
   - component: {fileID: 781625203}
-  - component: {fileID: 781625202}
   - component: {fileID: 781625201}
+  - component: {fileID: 781625210}
   m_Layer: 0
   m_Name: 'Bob '
   m_TagString: Untagged
@@ -2057,21 +2057,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &781625202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781625200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AT_sp: 1
-  range: 1.5
-  num: 1
 --- !u!114 &781625203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2084,7 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 45
+  HP: 900
   ATK: 7
   DEF: 0
 --- !u!114 &781625204
@@ -2252,6 +2237,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781625210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781625200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ad7b4e248bc864bb8a39a1994f4870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp: 1
+  range: 10
+  num: 1
 --- !u!1 &912902206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,7 +2867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1074975389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2903,7 +2903,7 @@ MonoBehaviour:
   cooltime:
   - 3
   - 5
-  spawnPoint: {fileID: 1074975391}
+  pos: {fileID: 0}
 --- !u!212 &1074975390
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2986,8 +2986,8 @@ GameObject:
   - component: {fileID: 1151326482}
   - component: {fileID: 1151326481}
   - component: {fileID: 1151326480}
-  - component: {fileID: 1151326479}
   - component: {fileID: 1151326478}
+  - component: {fileID: 1151326487}
   m_Layer: 0
   m_Name: Bob_enemy
   m_TagString: Untagged
@@ -3016,21 +3016,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1151326479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151326477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AT_sp_e: 1
-  range_e: 1.5
-  num: 1
 --- !u!114 &1151326480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3186,7 +3171,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1315f89815a29b243b8798c6be90499d, type: 3}
-  m_Color: {r: 0.9339623, g: 0.15128744, b: 0.110137045, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3211,6 +3196,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1151326487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151326477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c507b706cd2c50747ba63818d2ae28bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp_e: 1
+  range_e: 10
+  num: 1
 --- !u!1 &1198283934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,7 +3876,7 @@ MonoBehaviour:
   cooltime:
   - 0
   - 0
-  spawnPoint: {fileID: 0}
+  pos: {fileID: 0}
 --- !u!212 &1526503226
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4171,8 +4171,8 @@ GameObject:
   - component: {fileID: 1639112974}
   - component: {fileID: 1639112973}
   - component: {fileID: 1639112972}
-  - component: {fileID: 1639112971}
   - component: {fileID: 1639112970}
+  - component: {fileID: 1639112979}
   m_Layer: 0
   m_Name: Bob_enemy
   m_TagString: Untagged
@@ -4201,21 +4201,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1639112971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639112969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AT_sp_e: 1
-  range_e: 1.5
-  num: 1
 --- !u!114 &1639112972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4371,7 +4356,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1315f89815a29b243b8798c6be90499d, type: 3}
-  m_Color: {r: 0.9339623, g: 0.15128744, b: 0.110137045, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4396,6 +4381,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1639112979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639112969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c507b706cd2c50747ba63818d2ae28bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp_e: 1
+  range_e: 10
+  num: 1
 --- !u!1 &1656062028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4411,8 +4411,8 @@ GameObject:
   - component: {fileID: 1656062033}
   - component: {fileID: 1656062032}
   - component: {fileID: 1656062031}
-  - component: {fileID: 1656062030}
   - component: {fileID: 1656062029}
+  - component: {fileID: 1656062038}
   m_Layer: 0
   m_Name: 'Bob '
   m_TagString: Untagged
@@ -4441,21 +4441,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1656062030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656062028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AT_sp: 1
-  range: 1.5
-  num: 1
 --- !u!114 &1656062031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4468,7 +4453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 45
+  HP: 900
   ATK: 7
   DEF: 0
 --- !u!114 &1656062032
@@ -4636,6 +4621,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1656062038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656062028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ad7b4e248bc864bb8a39a1994f4870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp: 1
+  range: 10
+  num: 1
 --- !u!1 &1676155194
 GameObject:
   m_ObjectHideFlags: 0
