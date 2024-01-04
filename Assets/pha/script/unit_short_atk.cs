@@ -45,6 +45,11 @@ public class unit_short_atk : MonoBehaviour
                     attack = true;
                     animator.SetBool("Attack", true);
                     this.enemy = enemy.transform;
+                    if (enemy != null&&my_at_sp >= AT_sp)    //사거리 안에 적이 있고 공격속도를 충족하면 공격
+                    {
+                        enemy.short_hurt(num);
+                        Debug.Log("아군 공격!");
+                    }
                     break;
                 }
                 else
@@ -53,11 +58,7 @@ public class unit_short_atk : MonoBehaviour
                     animator.SetBool("Attack", false);
                 }
             }
-            if (attack && my_at_sp >= AT_sp)    //사거리 안에 적이 있고 공격속도를 충족하면 공격
-            {
-                enemy.short_hurt(num);
-
-            }
+            
         }
 
        
