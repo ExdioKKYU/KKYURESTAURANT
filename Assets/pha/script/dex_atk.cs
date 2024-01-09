@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dex_atk : MonoBehaviour
+public class Dex_atk : MonoBehaviour
 {
     public float shot_speed;
+    public float ATK_L;
+
 
     // Start is called before the first frame update
     void Start()
