@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class unit_long_atk : MonoBehaviour
+public class Unit_long_atk : MonoBehaviour
 {
     public float AT_sp;      // 공격속도
     public float range;      // 사정 거리
@@ -30,10 +30,10 @@ public class unit_long_atk : MonoBehaviour
         my_at_sp += Time.deltaTime;     // 공격속도 딜레이 계산
 
         // 주변에 있는 모든 ability_enemy 오브젝트를 배열로 가져옴
-        ability_enemy[] enemies = GameObject.FindObjectsOfType<ability_enemy>();
+        Ability_enemy[] enemies = GameObject.FindObjectsOfType<Ability_enemy>();
 
         // 모든 적에 대해 반복
-        foreach (ability_enemy enemy in enemies)
+        foreach (Ability_enemy enemy in enemies)
         {
             // 추가: 같은 열에 위치한지 확인
             if (Mathf.Approximately(transform.position.y, enemy.transform.position.y))
@@ -46,6 +46,7 @@ public class unit_long_atk : MonoBehaviour
                 {
                     attack = true;
                     animator.SetBool("Attack", true);
+                    Debug.Log("장거리 공격");
                     break; // 이미 하나의 유닛에 대해 공격이 결정되었으므로 루프를 종료합니다.
                 }
                 else

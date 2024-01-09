@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bob
+  - Bob_e
+  - Frying_flour
+  - Frying_flour_e
   layers:
   - Default
   - TransparentFX

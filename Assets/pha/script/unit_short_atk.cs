@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class unit_short_atk : MonoBehaviour
+public class Unit_short_atk : MonoBehaviour
 {
     public float AT_sp;      // 공격속도
     public float range;      // 사정 거리
-    public int num;          // 유닛들 중 번호를 매겨 어느 유닛인지 판별 위함
+    public float ATK_S;
+
 
     private bool attack;
     private float my_at_sp;
@@ -28,10 +29,10 @@ public class unit_short_atk : MonoBehaviour
         my_at_sp += Time.deltaTime; // 공격속도 딜레이 계산
 
 
-        ability_enemy[] enemies = GameObject.FindObjectsOfType<ability_enemy>();
+        Ability_enemy[] enemies = GameObject.FindObjectsOfType<Ability_enemy>();
 
         // 모든 적에 대해 반복
-        foreach (ability_enemy enemy in enemies)
+        foreach (Ability_enemy enemy in enemies)
         {
             // 추가: 같은 열에 위치한지 확인
             if (Mathf.Approximately(transform.position.y, enemy.transform.position.y))
@@ -45,22 +46,26 @@ public class unit_short_atk : MonoBehaviour
                     attack = true;
                     animator.SetBool("Attack", true);
                     this.enemy = enemy.transform;
-                    if (enemy != null&&my_at_sp >= AT_sp)    //사거리 안에 적이 있고 공격속도를 충족하면 공격
+                    if (enemy != null && my_at_sp >= AT_sp)    //사거리 안에 적이 있고 공격속도를 충족하면 공격
                     {
-                        enemy.short_hurt(num);
-                        Debug.Log("아군 공격!");
+                        Debug.Log("단거리 공격");
+                        enemy.short_hurt(ATK_S);
+                        my_at_sp = 0.0f;
+
+                        break;
                     }
-                    break;
                 }
                 else
                 {
                     attack = false;
                     animator.SetBool("Attack", false);
                 }
-            }
-            
-        }
 
-       
+            }
+
+        }
+        
+
+
     }
 }
