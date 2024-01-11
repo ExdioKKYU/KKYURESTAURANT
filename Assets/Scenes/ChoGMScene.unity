@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d465bc75f9c4ca7418c906e98d9b175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_e: 18
+  HP_e: 900
   ATK_e: 10
   DEF_e: 0
 --- !u!50 &160771475
@@ -491,7 +491,7 @@ Transform:
   m_GameObject: {fileID: 160771469}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: -1, z: 0}
+  m_LocalPosition: {x: 10, y: -1, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -515,13 +515,14 @@ GameObject:
   - component: {fileID: 202165758}
   - component: {fileID: 202165757}
   - component: {fileID: 202165756}
+  - component: {fileID: 202165765}
   m_Layer: 0
   m_Name: Frying_flour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &202165756
 Animator:
   serializedVersion: 5
@@ -556,6 +557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  speed: 0
   rangeUnit: 6
 --- !u!114 &202165758
 MonoBehaviour:
@@ -597,7 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 18
+  HP: 900
   ATK: 10
   DEF: 0
 --- !u!50 &202165761
@@ -733,13 +735,26 @@ Transform:
   m_GameObject: {fileID: 202165755}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11, y: 3, z: 0}
+  m_LocalPosition: {x: -8, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2051462436}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &202165765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202165755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3286d352c44a6324293d9a879d1ff7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj_unit: {fileID: 0}
 --- !u!1 &262060948
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &342898339
 Animator:
   serializedVersion: 5
@@ -901,6 +916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  speed: 0
   rangeUnit: 1.5
 --- !u!50 &342898344
 Rigidbody2D:
@@ -1079,7 +1095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &356152260
 Animator:
   serializedVersion: 5
@@ -2035,7 +2051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &781625201
 Animator:
   serializedVersion: 5
@@ -2097,6 +2113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  speed: 0
   rangeUnit: 1.5
 --- !u!50 &781625206
 Rigidbody2D:
@@ -2487,7 +2504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &943616683
 Animator:
   serializedVersion: 5
@@ -2563,7 +2580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d465bc75f9c4ca7418c906e98d9b175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_e: 18
+  HP_e: 900
   ATK_e: 10
   DEF_e: 0
 --- !u!50 &943616688
@@ -2699,7 +2716,7 @@ Transform:
   m_GameObject: {fileID: 943616682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 3, z: 0}
+  m_LocalPosition: {x: 10, y: 3, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2994,7 +3011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1151326478
 Animator:
   serializedVersion: 5
@@ -3379,6 +3396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  speed: 0
   rangeUnit: 6
 --- !u!114 &1279980713
 MonoBehaviour:
@@ -3420,7 +3438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 18
+  HP: 900
   ATK: 10
   DEF: 0
 --- !u!50 &1279980716
@@ -3556,7 +3574,7 @@ Transform:
   m_GameObject: {fileID: 1279980710}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: -1, z: 0}
+  m_LocalPosition: {x: -8, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4179,7 +4197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1639112970
 Animator:
   serializedVersion: 5
@@ -4419,7 +4437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1656062029
 Animator:
   serializedVersion: 5
@@ -4481,6 +4499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  speed: 0
   rangeUnit: 1.5
 --- !u!50 &1656062034
 Rigidbody2D:
@@ -5772,7 +5791,7 @@ Transform:
   m_GameObject: {fileID: 5072790535277840461}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 1, z: 0}
+  m_LocalPosition: {x: 10, y: 1, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5818,7 +5837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 18
+  HP: 900
   ATK: 10
   DEF: 0
 --- !u!1 &2374653927194340430
@@ -5846,7 +5865,7 @@ Transform:
   m_GameObject: {fileID: 1032319513787158920}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: 1, z: 0}
+  m_LocalPosition: {x: -8, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5866,6 +5885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  speed: 0
   rangeUnit: 6
 --- !u!212 &3687648167615579463
 SpriteRenderer:
@@ -6207,7 +6227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d465bc75f9c4ca7418c906e98d9b175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_e: 18
+  HP_e: 900
   ATK_e: 10
   DEF_e: 0
 --- !u!114 &8512112046594950273

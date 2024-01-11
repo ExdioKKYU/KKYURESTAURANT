@@ -5,7 +5,7 @@ using UnityEngine;
 public class UnitMove : MonoBehaviour
 {
     public float moveSpeed;
-    private float speed;
+    public float speed;
     public float rangeUnit;   // 유닛의 사거리에 따른 스크립트 받아오기
 
     Animator animator;

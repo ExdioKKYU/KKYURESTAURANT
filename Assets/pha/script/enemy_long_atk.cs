@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy_long_atk : MonoBehaviour
+public class Enemy_long_atk : MonoBehaviour
 {
     public float AT_sp_e;      // 공격속도
     public float range_e;      // 사정 거리
@@ -30,10 +30,10 @@ public class enemy_long_atk : MonoBehaviour
         my_at_sp += Time.deltaTime;     // 공격속도 딜레이 계산
 
         // 주변에 있는 모든 ability_float_close 오브젝트를 배열로 가져옴
-        ability[] floatCloseEnemies = GameObject.FindObjectsOfType<ability>();
+        Ability[] floatCloseEnemies = GameObject.FindObjectsOfType<Ability>();
 
         // 모든 적에 대해 반복
-        foreach (ability floatCloseEnemy in floatCloseEnemies)
+        foreach (Ability floatCloseEnemy in floatCloseEnemies)
         {
             // 추가: 같은 열에 위치한지 확인
             if (Mathf.Approximately(transform.position.y, floatCloseEnemy.transform.position.y))
