@@ -7,12 +7,10 @@ using UnityEditor.VersionControl;
 
 public class Shop : MonoBehaviour
 {
-    public float CoinInt; // 코인이 저장되는 변수
+    public float CoinInt ; // 코인이 저장되는 변수
     public Text CoinText; //코인을 표시할 오브젝트
     public float Timer; //타이머
     private bool TimeSet; // 타이머 작동여부
-
-    public GameObject Recall;
 
     void Start()
     {
@@ -25,7 +23,7 @@ public class Shop : MonoBehaviour
 
         if (TimeSet == true) // TimeSet이 True면
         {
-            Timer += Time.deltaTime; // 타이머가 작동합니다.
+            Timer += Time.deltaTime; // 타이머가 작동
             if (Timer > 1.0f) // 1초가 지나면
             {
                 Timer = 0;
@@ -48,7 +46,6 @@ public class Shop : MonoBehaviour
             CoinInt -= 100f; // CoinInt가 100 줌
             TimeSet = true;
 
-            Recall.GetComponent<RecallUnit>().playerrecall();
         }
     }
 
