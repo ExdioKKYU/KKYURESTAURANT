@@ -8,6 +8,29 @@ TagManager:
   - Bob_e
   - Frying_flour
   - Frying_flour_e
+  - Pork
+  - Pork_e
+  - Kim
+  - Kim_e
+  - Sweet_potato
+  - Sweet_potato_e
+  - Sausage
+  - Sausage_e
+  - Carrot
+  - Carrot_e
+  - Rice_cake
+  - Rice_cake_e
+  - Noodle
+  - Noodle_e
+  - Secret_sauce
+  - Secret_sauce_e
+  - Egg
+  - Egg_e
+  - Fish_cake
+  - Fish_cake_e
+  - Rice_roll
+  - Rice_roll_e
+  - Kimbob
   layers:
   - Default
   - TransparentFX
