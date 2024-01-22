@@ -5,22 +5,21 @@ using UnityEngine;
 
 public class LineSelection  : MonoBehaviour
 {
-    public Line line;
+    public GameObject unitPrefab; // 유닛의 프리팹
 
-    public GameObject Recall;
-    
-
-    private void Start()
+    void OnMouseDown()
     {
-
+        // 마우스 클릭이 감지되면 유닛을 소환
+        SpawnUnit();
     }
 
-    private void OnMouseUpAsButton()
+    void SpawnUnit()
     {
-        DataMgr.instance.currentLine = line;
-        Debug.Log("linechange");
+        //특정 오브젝트에서 유닛 소환하면서 x축 위치를 고정
+        float fixedXPosition = -36f; // 고정할 x축 위치
+        Vector3 spawnPosition = new Vector3(fixedXPosition, transform.position.y, transform.position.z);
 
-        Recall.GetComponent<RecallUnit>().Call();
-
+        // 여기에서는 간단히 새로운 유닛을 특정 오브젝트의 위치에 생성
+        Instantiate(unitPrefab, spawnPosition, Quaternion.identity);
     }
 }

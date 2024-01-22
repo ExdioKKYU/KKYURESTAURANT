@@ -13,14 +13,14 @@ public class Spawner_E : MonoBehaviour
     int[] unitPosition = new int[5];//유닛 포지션
 
     [SerializeField]
-    GameObject[] rush_tank;//돌격형 탱커 포지션의 유닛 목록
+    GameObject[] rush_tnak;//돌격형 탱커 포지션의 유닛 목록
     [SerializeField]
-    float[] rush_tank_percentage;//돌격형 탱커 포지션의 유닛별 소환 확률
+    float[] rush_tnak_percentage;//돌격형 탱커 포지션의 유닛별 소환 확률
 
     [SerializeField]
-    GameObject[] guard_tank;//방어형 탱커 포지션의 유닛 목록
+    GameObject[] guard_tnak;//방어형 탱커 포지션의 유닛 목록
     [SerializeField]
-    float[] guard_tank_percentage;//방어형 탱커 포지션의 유닛별 소환 확률
+    float[] guard_tnak_percentage;//방어형 탱커 포지션의 유닛별 소환 확률
 
     [SerializeField]
     GameObject[] close_deal;//근거리 딜러 포지션의 유닛 목록
@@ -62,19 +62,6 @@ public class Spawner_E : MonoBehaviour
 
     private float timeAfterSpawn;
 
-    private int Bob_cloneCounter = 0;
-    private int Pork_cloneCounter = 0;
-    private int Kim_cloneCounter = 0;
-    private int Sweet_potato_cloneCounter = 0;
-    private int Sausage_cloneCounter = 0;
-    private int Carrot_cloneCounter = 0;
-    private int Rice_cake_cloneCounter = 0;
-    private int Frying_flour_cloneCounter = 0;
-    private int Noodle_cloneCounter = 0;
-    private int Secret_sauce_cloneCounter = 0;
-    private int Egg_cloneCounter = 0;
-    private int Fish_cake_cloneCounter = 0;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -107,112 +94,38 @@ public class Spawner_E : MonoBehaviour
             if (unit_position == 0)
             {
                 //2. 결정된 유닛 포지션의 적군을 확률에 따라 소환
-                GameObject unitPrefab = rush_tank[GetRandom(rush_tank_percentage, rush_tank_percentage.Length, rush_tank.Length)];
-                GameObject clonedObject = Instantiate(unitPrefab, pos.position, transform.rotation);
-
-                //3. 유닛의 이름 설정
-                if (unitPrefab.name == "Bob_enemy")
-                {
-                    Bob_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Bob_cloneCounter;
-                }
-                else
-                {
-                    Pork_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Pork_cloneCounter;
-                }
+                Instantiate(rush_tnak[GetRandom(rush_tnak_percentage, rush_tnak_percentage.Length, rush_tnak.Length)], pos.position, transform.rotation);
 
                 change(p_percentages, original_p);
 
-                //4. 다음번 소환에 같은 유닛 포지션이 연속으로 여러변 소환되는 것을 방지 하기위해 유닛 포지션별 확률을 조정
-                Percents_Adj(unit_position);
+                //3. 다음번 소환에 같은 유닛 포지션이 연속으로 여러변 소환되는 것을 방지 하기위해 유닛 포지션별 확률을 조정
+                //Percents_Adj(unit_position, rt, gt, cd, ld, sp);
             }
 
             else if (unit_position == 1)
             {
-                GameObject unitPrefab = guard_tank[GetRandom(guard_tank_percentage, guard_tank_percentage.Length, guard_tank.Length)];
-                GameObject clonedObject = Instantiate(unitPrefab, pos.position, transform.rotation);
-
-                if (unitPrefab.name == "Kim_enemy")
-                {
-                    Kim_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Kim_cloneCounter;
-                }
-                else
-                {
-                    Sweet_potato_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Sweet_potato_cloneCounter;
-                }
-
+                Instantiate(guard_tnak[GetRandom(guard_tnak_percentage, guard_tnak_percentage.Length, guard_tnak.Length)], pos.position, transform.rotation);
                 change(p_percentages, original_p);
                 Percents_Adj(unit_position);
             }
 
             else if (unit_position == 2)
             {
-                GameObject unitPrefab = close_deal[GetRandom(close_deal_percentage, close_deal_percentage.Length, close_deal.Length)];
-                GameObject clonedObject = Instantiate(unitPrefab, pos.position, transform.rotation);
-
-                if (unitPrefab.name == "Sausage_enemy")
-                {
-                    Kim_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Kim_cloneCounter;
-                }
-                else if (unitPrefab.name == "Carrot_enemy")
-                {
-                    Kim_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Kim_cloneCounter;
-                }
-                else
-                {
-                    Sweet_potato_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Sweet_potato_cloneCounter;
-                }
-
+                Instantiate(close_deal[GetRandom(close_deal_percentage, close_deal_percentage.Length, close_deal.Length)], pos.position, transform.rotation);
                 change(p_percentages, original_p);
                 Percents_Adj(unit_position);
             }
 
             else if (unit_position == 3)
             {
-                GameObject unitPrefab = long_deal[GetRandom(long_deal_percentage, long_deal_percentage.Length, long_deal.Length)];
-                GameObject clonedObject = Instantiate(unitPrefab, pos.position, transform.rotation);
-
-                if (unitPrefab.name == "Frying_flour_enemy")
-                {
-                    Frying_flour_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Frying_flour_cloneCounter;
-                }
-                else
-                {
-                    Noodle_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Noodle_cloneCounter;
-                }
-
+                Instantiate(long_deal[GetRandom(long_deal_percentage, long_deal_percentage.Length, long_deal.Length)], pos.position, transform.rotation);
                 change(p_percentages, original_p);
                 Percents_Adj(unit_position);
             }
 
             else
             {
-                GameObject unitPrefab = support[GetRandom(support_percentage, support_percentage.Length, support.Length)];
-                GameObject clonedObject = Instantiate(unitPrefab, pos.position, transform.rotation);
-
-                if (unitPrefab.name == "Secret_sauce_enemy")
-                {
-                    Secret_sauce_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Secret_sauce_cloneCounter;
-                }
-                else if (unitPrefab.name == "Egg_enemy")
-                {
-                    Egg_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Egg_cloneCounter;
-                }
-                else
-                {
-                    Fish_cake_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Fish_cake_cloneCounter;
-                }
+                Instantiate(support[GetRandom(support_percentage, support_percentage.Length, support.Length)], pos.position, transform.rotation);
                 change(p_percentages, original_p);
                 Percents_Adj(unit_position);
             }
