@@ -248,15 +248,15 @@ public class Spawner_E : MonoBehaviour
         //각 열의 좌표를 입력할 예정
         if (line == 0)
         {
-            objectTransform.position = new Vector2(5.0f, 1.0f);
+            objectTransform.position = new Vector2(33.0f, 1.0f);
         }
         if (line == 1)
         {
-            objectTransform.position = new Vector2(5.0f, 0.0f);
+            objectTransform.position = new Vector2(33.0f, -0.8f);
         }
         if (line == 2)
         {
-            objectTransform.position = new Vector2(5.0f, -1.0f);
+            objectTransform.position = new Vector2(33.0f, -2.6f);
         }
     }
 
