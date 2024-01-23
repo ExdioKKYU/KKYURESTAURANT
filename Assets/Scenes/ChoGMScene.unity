@@ -515,7 +515,6 @@ GameObject:
   - component: {fileID: 202165758}
   - component: {fileID: 202165757}
   - component: {fileID: 202165756}
-  - component: {fileID: 202165765}
   m_Layer: 0
   m_Name: Frying_flour(2)
   m_TagString: Untagged
@@ -742,18 +741,6 @@ Transform:
   - {fileID: 2051462436}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &202165765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 202165755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3286d352c44a6324293d9a879d1ff7bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &262060948
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,10 +830,10 @@ GameObject:
   - component: {fileID: 342898345}
   - component: {fileID: 342898344}
   - component: {fileID: 342898343}
+  - component: {fileID: 342898348}
   - component: {fileID: 342898342}
   - component: {fileID: 342898341}
   - component: {fileID: 342898339}
-  - component: {fileID: 342898348}
   m_Layer: 0
   m_Name: Bob (1)
   m_TagString: Untagged
@@ -1065,9 +1052,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 342898338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ad7b4e248bc864bb8a39a1994f4870, type: 3}
+  m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AT_sp: 3
+  range: 1.5
+  ATK_S: 7
 --- !u!1 &356152259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,9 +1292,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 356152259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c507b706cd2c50747ba63818d2ae28bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AT_sp_e: 3
+  range_e: 1.5
+  ATK_S_e: 7
 --- !u!1 &359343616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,9 +2188,9 @@ GameObject:
   - component: {fileID: 781625206}
   - component: {fileID: 781625205}
   - component: {fileID: 781625204}
+  - component: {fileID: 781625210}
   - component: {fileID: 781625203}
   - component: {fileID: 781625201}
-  - component: {fileID: 781625210}
   m_Layer: 0
   m_Name: Bob (3)
   m_TagString: Untagged
@@ -2416,9 +2409,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 781625200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ad7b4e248bc864bb8a39a1994f4870, type: 3}
+  m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AT_sp: 3
+  range: 1.5
+  ATK_S: 7
 --- !u!1 &912902206
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,9 +3586,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1151326477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c507b706cd2c50747ba63818d2ae28bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AT_sp_e: 3
+  range_e: 1.5
+  ATK_S_e: 7
 --- !u!1 &1198283934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,9 +4778,9 @@ GameObject:
   - component: {fileID: 1639112975}
   - component: {fileID: 1639112974}
   - component: {fileID: 1639112973}
+  - component: {fileID: 1639112979}
   - component: {fileID: 1639112972}
   - component: {fileID: 1639112970}
-  - component: {fileID: 1639112979}
   m_Layer: 0
   m_Name: Bob_enemy(3)
   m_TagString: Untagged
@@ -4999,9 +4998,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1639112969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c507b706cd2c50747ba63818d2ae28bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AT_sp_e: 3
+  range_e: 1.5
+  ATK_S_e: 7
 --- !u!1 &1656062028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,10 +5017,10 @@ GameObject:
   - component: {fileID: 1656062035}
   - component: {fileID: 1656062034}
   - component: {fileID: 1656062033}
+  - component: {fileID: 1656062038}
   - component: {fileID: 1656062032}
   - component: {fileID: 1656062031}
   - component: {fileID: 1656062029}
-  - component: {fileID: 1656062038}
   m_Layer: 0
   m_Name: Bob (2)
   m_TagString: Untagged
@@ -5237,9 +5239,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1656062028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ad7b4e248bc864bb8a39a1994f4870, type: 3}
+  m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AT_sp: 3
+  range: 1.5
+  ATK_S: 7
 --- !u!1 &1676155194
 GameObject:
   m_ObjectHideFlags: 0
@@ -5876,6 +5881,7 @@ GameObject:
   - component: {fileID: 1801829077}
   - component: {fileID: 1801829084}
   - component: {fileID: 1801829076}
+  - component: {fileID: 1801829085}
   m_Layer: 0
   m_Name: MiniGimbob (1)
   m_TagString: Untagged
@@ -5893,7 +5899,7 @@ Animator:
   m_GameObject: {fileID: 1801829074}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d2fd458dcc3d1449b22b18ff32c4001, type: 2}
+  m_Controller: {fileID: 9100000, guid: e2f52a13050dba041b508c353c9b44f0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6059,7 +6065,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1315f89815a29b243b8798c6be90499d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71f2c1d19a43cb94c826e694ffb107e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6097,6 +6103,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3286d352c44a6324293d9a879d1ff7bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: 10
+--- !u!114 &1801829085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801829074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp: 0
+  range: 0
+  ATK_S: 0
 --- !u!1 &1816934627
 GameObject:
   m_ObjectHideFlags: 0
@@ -6173,9 +6195,9 @@ GameObject:
   - component: {fileID: 1891970129}
   - component: {fileID: 1891970128}
   - component: {fileID: 1891970127}
+  - component: {fileID: 1891970133}
   - component: {fileID: 1891970126}
   - component: {fileID: 1891970125}
-  - component: {fileID: 1891970124}
   m_Layer: 0
   m_Name: Bob_enemy(4)
   m_TagString: Untagged
@@ -6183,18 +6205,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1891970124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891970123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c507b706cd2c50747ba63818d2ae28bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1891970125
 Animator:
   serializedVersion: 5
@@ -6396,6 +6406,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891970133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891970123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp_e: 3
+  range_e: 1.5
+  ATK_S_e: 7
 --- !u!1 &1915339442
 GameObject:
   m_ObjectHideFlags: 0
@@ -6819,6 +6844,7 @@ GameObject:
   - component: {fileID: 2073459243}
   - component: {fileID: 2073459250}
   - component: {fileID: 2073459242}
+  - component: {fileID: 2073459251}
   m_Layer: 0
   m_Name: MiniGimbob
   m_TagString: Untagged
@@ -6836,7 +6862,7 @@ Animator:
   m_GameObject: {fileID: 2073459240}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d2fd458dcc3d1449b22b18ff32c4001, type: 2}
+  m_Controller: {fileID: 9100000, guid: e2f52a13050dba041b508c353c9b44f0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7002,7 +7028,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1315f89815a29b243b8798c6be90499d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71f2c1d19a43cb94c826e694ffb107e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7040,6 +7066,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3286d352c44a6324293d9a879d1ff7bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: 10
+--- !u!114 &2073459251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073459240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp: 0
+  range: 0
+  ATK_S: 0
 --- !u!61 &682727477143964018
 BoxCollider2D:
   m_ObjectHideFlags: 0
