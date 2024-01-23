@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class MiniGimbob : MonoBehaviour
 {
+    public float Damage;
+    private float Attack_Move_Speed;
 
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-
+        Attack_Move_Speed = 0.0f;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //애니메이션 조건 확인
+        transform.Translate(Attack_Move_Speed * Time.deltaTime, 0, 0);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -23,7 +27,7 @@ public class MiniGimbob : MonoBehaviour
         if (abilityEnemy != null)
         {
             // HP_e 값이 10 감소
-            abilityEnemy.HP_e -= 10;
+            abilityEnemy.HP_e -= Damage;
         }
     }
 
@@ -31,11 +35,12 @@ public class MiniGimbob : MonoBehaviour
     {
         if (collision.CompareTag("Table"))
         {
-            GetComponent<UnitMove>().moveSpeed = 7.0f;
+            GetComponent<UnitMove>().moveSpeed = 0.0f;
             GetComponent<UnitMove>().rangeUnit = 0.0f;
             GetComponent<Unit_short_atk>().ATK_S = 0.0f;
             GetComponent<Unit_short_atk>().AT_sp = 0.0f;
-            GetComponent<Unit_short_atk>().range = 0.0f;
+            GetComponent<Unit_short_atk>().range = 9999.0f;
+            Attack_Move_Speed = 7.0f;
         }
     }
 }
