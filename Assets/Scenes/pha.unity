@@ -1559,7 +1559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &633705065
 Animator:
   serializedVersion: 5
@@ -2037,7 +2037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &683554184
 Animator:
   serializedVersion: 5
@@ -3213,7 +3213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1136530744
 Animator:
   serializedVersion: 5
@@ -4632,7 +4632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1742127036
 Animator:
   serializedVersion: 5
@@ -4708,7 +4708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d465bc75f9c4ca7418c906e98d9b175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_e: 18
+  HP_e: 1000
   DEF_e: 0
   Hit_e: 0
 --- !u!50 &1742127041
@@ -5823,7 +5823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1962879866
 Animator:
   serializedVersion: 5
@@ -6222,7 +6222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2039103834
 Animator:
   serializedVersion: 5
@@ -6472,6 +6472,7 @@ MonoBehaviour:
   CoinInt: 0
   CoinText: {fileID: 1123744867}
   Timer: 0
+  UnitCoin: 0
 --- !u!4 &2050036288
 Transform:
   m_ObjectHideFlags: 0
@@ -6878,6 +6879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bob  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4872110243146610562, guid: 0d10b4eb4d158654fb91fcd993658bf3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7251087030327652762, guid: 0d10b4eb4d158654fb91fcd993658bf3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.18
@@ -6975,6 +6980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrot
       objectReference: {fileID: 0}
+    - target: {fileID: 8091889903591407594, guid: 312a08ca8ccccf049b2e02783e4c8900, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7032,6 +7041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kim (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8343620162982083348, guid: 30a0fded8dc6b7f4bbbec3726113840c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7048,6 +7061,10 @@ PrefabInstance:
     - target: {fileID: 951623674115648465, guid: ac27a71fee06f9449a5459debf5350bc, type: 3}
       propertyPath: m_Name
       value: Sausage
+      objectReference: {fileID: 0}
+    - target: {fileID: 951623674115648465, guid: ac27a71fee06f9449a5459debf5350bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7691904294671564392, guid: ac27a71fee06f9449a5459debf5350bc, type: 3}
       propertyPath: m_LocalPosition.x
