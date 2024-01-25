@@ -10,10 +10,12 @@ public class Ability : MonoBehaviour
     public float Hit;
 
     SpriteRenderer sprite;
+    public Bass_Atk baseAtkScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        baseAtkScript = GetComponent<Bass_Atk>();
         sprite = gameObject.GetComponent<SpriteRenderer>();
     }
 
@@ -48,6 +50,7 @@ public class Ability : MonoBehaviour
 
             // 체력 - (적의 공격력 - 자신의 방어력)
             HP -= Hit - (Hit * DEF);
+            baseAtkScript.HitDamage(Hit);
             sprite.color = Color.red;   //공격당하면 색이 변함
             Invoke("color", 0.2f);
 
@@ -67,6 +70,7 @@ public class Ability : MonoBehaviour
             }
 
             HP -= Hit - (Hit * DEF);
+            baseAtkScript.HitDamage(Hit);
             Destroy(other.gameObject);
         }
 
@@ -82,6 +86,7 @@ public class Ability : MonoBehaviour
             }
 
             HP -= Hit - (Hit * DEF);
+            baseAtkScript.HitDamage(Hit);
             Destroy(other.gameObject);
         }
 
@@ -97,6 +102,7 @@ public class Ability : MonoBehaviour
             }
 
             HP -= Hit - (Hit * DEF);
+            baseAtkScript.HitDamage(Hit);
             Destroy(other.gameObject);
         }
     }
@@ -104,6 +110,7 @@ public class Ability : MonoBehaviour
     public void short_hurt(float hit)
     {
         HP -= hit - (hit * DEF);
+        baseAtkScript.HitDamage(hit);
         sprite.color = Color.red;   //공격당하면 색이 변함
         Invoke("color", 0.2f);
    

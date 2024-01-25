@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestBack : MonoBehaviour
+public class BackSwipe : MonoBehaviour
 {
     public float swipeSpeed = 5.0f;
+    public float smoothTime = 0.3f; // 부드러운 이동을 위한 시간
+    public float minX = -25f; // x 좌표의 최소값
+    public float maxX = 35f; // x 좌표의 최대값
     public ParticleSystem clickEffect; // 클릭 시 재생될 시펙트
 
     private Vector2 touchStartPos;
+    private Vector3 velocity = Vector3.zero; // 이동 속도를 저장하는 변수
 
     void Update()
     {
@@ -32,17 +36,16 @@ public class TestBack : MonoBehaviour
             // 스와이프 거리 계산
             float swipeDistance = Input.mousePosition.x - touchStartPos.x;
 
-            // 배경을 좌우로 스와이프
-            transform.Translate(Vector3.right * swipeDistance * swipeSpeed * Time.deltaTime);
+            // 배경을 부드럽게 좌우로 스와이프
+            float targetX = transform.position.x + swipeDistance * swipeSpeed * Time.deltaTime;
+            targetX = Mathf.Clamp(targetX, minX, maxX); // x 좌표에 대한 제한
+
+            // 부드러운 이동 적용
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(targetX, transform.position.y, transform.position.z), ref velocity, smoothTime);
 
             // 현재 위치를 다음 프레임의 시작 위치로 업데이트
             touchStartPos = Input.mousePosition;
-
-            // 화면 끝에 도달했을 때 스와이프 중지
-            if (Mathf.Abs(transform.position.x) >= 29f && Mathf.Abs(transform.position.x) <= -29f) // 예시로 x좌표가 5.0f 이상이면 중지
-            {
-                transform.position = new Vector3(Mathf.Sign(transform.position.x) * 5.0f, transform.position.y, transform.position.z);
-            }
         }
     }
+
 }
