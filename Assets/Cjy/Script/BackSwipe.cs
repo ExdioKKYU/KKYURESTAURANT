@@ -37,8 +37,9 @@ public class TestBack : MonoBehaviour
             float swipeDistance = Input.mousePosition.x - touchStartPos.x;
 
             // 배경을 부드럽게 좌우로 스와이프
-            float targetX = transform.position.x + swipeDistance * swipeSpeed * Time.deltaTime;
+            float targetX = transform.position.x - swipeDistance * swipeSpeed * Time.deltaTime;
             targetX = Mathf.Clamp(targetX, minX, maxX); // x 좌표에 대한 제한
+
 
             // 부드러운 이동 적용
             transform.position = Vector3.SmoothDamp(transform.position, new Vector3(targetX, transform.position.y, transform.position.z), ref velocity, smoothTime);
