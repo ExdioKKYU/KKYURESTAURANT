@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7422882880607856654}
   - component: {fileID: 2412022572246912652}
   - component: {fileID: 9077594776080575027}
-  - component: {fileID: 7162682382369268579}
+  - component: {fileID: 7654423463520640963}
   m_Layer: 0
   m_Name: shot1_e
   m_TagString: Untagged
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0.2584905, b: 0.2584905, a: 1}
   m_FlipX: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7162682382369268579
+--- !u!114 &7654423463520640963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,8 +140,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6815243988418388553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4dfee25725f94c4e933b281444894ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 85ce649c66021204eb9463e79a51e56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot_speed: -20
-  ATK_L: 10
+  shot_speed: -10
+  ATK_L_e: 10
