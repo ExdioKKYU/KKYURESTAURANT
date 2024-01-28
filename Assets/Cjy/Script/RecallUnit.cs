@@ -41,7 +41,7 @@ public class RecallUnit : MonoBehaviour
     public void OnClickButten1()
     {
         selectedUnitPrefab = unitPrefab1;
-        Shop.GetComponent<Shop>().UnitCoin = 100f;
+        Shop.GetComponent<Shop>().UnitCoin = 200f;
         Debug.Log("РЏДж 1");
     }
 
@@ -62,7 +62,7 @@ public class RecallUnit : MonoBehaviour
     public void OnClickButten4()
     {
         selectedUnitPrefab = unitPrefab4;
-        Shop.GetComponent<Shop>().UnitCoin = 400f;
+        Shop.GetComponent<Shop>().UnitCoin = 500f;
         Debug.Log("РЏДж 4");
     }
 

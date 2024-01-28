@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AT_sp: 0.7
-  range: 6
+  range: 6.2
   str_Prefab: {fileID: 5102675760119724196, guid: 021591450040b2a46935dc9db7f90406, type: 3}
   pos: {fileID: 2430156551384434042}
 --- !u!114 &5589915828584654207

@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AT_sp_e: 1
-  range_e: 1.5
+  range_e: 1.7
   ATK_S_e: 0
 --- !u!95 &5378943049966002372
 Animator:

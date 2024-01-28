@@ -14,7 +14,7 @@ public class Audio_controller : MonoBehaviour
 
     private void Awake()
     {
-        m_MusicMasterSlider.onValueChanged.AddListener(SetMasterVolume);
+        //m_MusicMasterSlider.onValueChanged.AddListener(SetMasterVolume);
         m_MusicBGMSlider.onValueChanged.AddListener(SetBGMVolume);
         m_MusicSFXSlider.onValueChanged.AddListener(SetSFXVolume);
         m_MusicSkill_VoiceSlider.onValueChanged.AddListener(SetSkill_VoiceVolume);
