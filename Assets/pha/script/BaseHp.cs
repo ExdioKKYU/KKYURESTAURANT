@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.UI;
+using UnityEngine.UI;
 
 public class BaseHp : MonoBehaviour
 {
+    public Slider BaseHPSlider;
+
     public float curHealth;
     public float maxHealth;
  
@@ -18,6 +20,11 @@ public class BaseHp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateHpSlider();
+    }
+
+    private void UpdateHpSlider()
+    {
+        BaseHPSlider.value = (float)curHealth / maxHealth;
     }
 }
