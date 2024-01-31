@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3719508526289180962}
   - component: {fileID: 5261990786513867263}
   - component: {fileID: 8691080572506960963}
+  - component: {fileID: -4906944432106738171}
   m_Layer: 0
   m_Name: Carrot 1
   m_TagString: Carrot
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.5, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -148,8 +149,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 30.000002, y: 30.000002}
-    newSize: {x: 2, y: 2}
+    oldSize: {x: 7.5000005, y: 7.5000005}
+    newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
     adaptiveTiling: 0
@@ -213,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AT_sp: 10
   range: 5.2
-  ATK_S: 2
+  ATK_S: 10
 --- !u!114 &5261990786513867263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,5 +240,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1ed29d07c8e9864a8d0a57d7c43f216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4906944432106738171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327593774733375455}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
