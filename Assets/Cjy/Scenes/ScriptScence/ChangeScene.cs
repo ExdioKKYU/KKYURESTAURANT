@@ -5,19 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public void Title_Chapter()
+
+
+    public void Lobby()
     {
-        SceneManager.LoadScene("Chapter");
+        SceneManager.LoadScene("Lobby");
     }
 
-    public void Chapter_Stage()
+    public void Stage()
     {
         SceneManager.LoadScene("Stage");
     }
 
-    public void Stage_InGame()
+    public void InGame()
     {
         SceneManager.LoadScene("CJY");
+        Debug.Log("√º¿Œ¡ˆ æ¿");
     }
 
     public void book()
