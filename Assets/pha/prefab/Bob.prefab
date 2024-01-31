@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5940830297516959612}
   - component: {fileID: 6593408132112557786}
   - component: {fileID: 540485429889793193}
+  - component: {fileID: 8768279401493791905}
   m_Layer: 0
   m_Name: Bob
   m_TagString: Bob
@@ -33,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 4872110243146610562}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.18, y: 3, z: 0}
+  m_LocalPosition: {x: -31.88, y: -0.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -202,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 900
+  HP: 100
   DEF: 0
   Hit: 0
 --- !u!114 &6593408132112557786
@@ -219,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AT_sp: 3
   range: 1.7
-  ATK_S: 7
+  ATK_S: 10
 --- !u!95 &540485429889793193
 Animator:
   serializedVersion: 5
@@ -241,3 +242,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8768279401493791905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872110243146610562}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

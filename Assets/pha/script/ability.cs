@@ -10,6 +10,12 @@ public class Ability : MonoBehaviour
     public float Hit;
 
     SpriteRenderer sprite;
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +28,7 @@ public class Ability : MonoBehaviour
     {
         if (HP <= 0)   //체력이 0이 되면 사라짐
         {
-            Destroy(gameObject);
+            GetComponent<Death>().enabled = true;
         }
     }
 
