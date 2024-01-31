@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KimbobPrefab: {fileID: 5570980444913007546, guid: 3cc87fc8dc4e6c44e8a0b9db5b88316d, type: 3}
-  Little_KimbobPrefab: {fileID: 750506126285252704, guid: 5407a469765a6624e89be17bcd506277, type: 3}
+  Little_KimbobPrefab: {fileID: 3402719490906042675, guid: 03a1154a30e90324980716326f614134, type: 3}
   Pork_cutletPrefab: {fileID: 0}
   Fried_sweet_potatoPrefab: {fileID: 0}
   TteokbokkiPrefab: {fileID: 0}
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KimbobPrefab: {fileID: 5570980444913007546, guid: 3cc87fc8dc4e6c44e8a0b9db5b88316d, type: 3}
-  Little_KimbobPrefab: {fileID: 750506126285252704, guid: 5407a469765a6624e89be17bcd506277, type: 3}
+  Little_KimbobPrefab: {fileID: 3402719490906042675, guid: 03a1154a30e90324980716326f614134, type: 3}
   Pork_cutletPrefab: {fileID: 0}
   Fried_sweet_potatoPrefab: {fileID: 0}
   TteokbokkiPrefab: {fileID: 0}
@@ -2126,7 +2126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa9075145f151f40ba84914132413f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swipeSpeed: 50
+  swipeSpeed: 70
   smoothTime: 0.3
   minX: -25
   maxX: 35
@@ -2297,9 +2297,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd78685353ef14b4d8898f29f66897e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitPrefab1: {fileID: 4872110243146610562, guid: 0d10b4eb4d158654fb91fcd993658bf3, type: 3}
-  unitPrefab2: {fileID: 8343620162982083348, guid: 30a0fded8dc6b7f4bbbec3726113840c, type: 3}
-  unitPrefab3: {fileID: 8091889903591407594, guid: 312a08ca8ccccf049b2e02783e4c8900, type: 3}
+  unitPrefab1: {fileID: 4872110243146610562, guid: 8066dcf3f4256114bba2379aa7817a37, type: 3}
+  unitPrefab2: {fileID: 5643499955467960296, guid: 5659c36aa0b755946824fe86160d0a60, type: 3}
+  unitPrefab3: {fileID: 7327593774733375455, guid: 7c0eab1e117b46146872402f6b8f4c4f, type: 3}
   unitPrefab4: {fileID: 951623674115648465, guid: ac27a71fee06f9449a5459debf5350bc, type: 3}
   Shop: {fileID: 1199670826}
   spawnPosition: {x: 0, y: 0}
@@ -2951,7 +2951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KimbobPrefab: {fileID: 5570980444913007546, guid: 3cc87fc8dc4e6c44e8a0b9db5b88316d, type: 3}
-  Little_KimbobPrefab: {fileID: 750506126285252704, guid: 5407a469765a6624e89be17bcd506277, type: 3}
+  Little_KimbobPrefab: {fileID: 3402719490906042675, guid: 03a1154a30e90324980716326f614134, type: 3}
   Pork_cutletPrefab: {fileID: 0}
   Fried_sweet_potatoPrefab: {fileID: 0}
   TteokbokkiPrefab: {fileID: 0}
@@ -3609,103 +3609,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317516268}
   m_CullTransparentMesh: 1
---- !u!1 &1400362157
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1400362160}
-  - component: {fileID: 1400362159}
-  - component: {fileID: 1400362162}
-  m_Layer: 8
-  m_Name: Background_battle_playplace
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1400362159
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400362157}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b5ea52b2ae8f3444ad61f763b498e0f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 80.08, y: 11.417657}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1400362160
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400362157}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1400362162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400362157}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed845e523d382a24f8f663fd2780bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1412300106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4552,6 +4455,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1905684806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905684808}
+  - component: {fileID: 1905684807}
+  m_Layer: 0
+  m_Name: Background_battle_playplace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1905684807
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905684806}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e2ceac2da1ef33f45b50350a366f2b65, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 80.08, y: 11.417657}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1905684808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905684806}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1961499557
 GameObject:
   m_ObjectHideFlags: 0
@@ -4955,7 +4942,7 @@ SceneRoots:
   - {fileID: 1199670828}
   - {fileID: 474400060}
   - {fileID: 1801155931}
-  - {fileID: 1400362160}
+  - {fileID: 1905684808}
   - {fileID: 1993353040}
   - {fileID: 406316830}
   - {fileID: 141139082}

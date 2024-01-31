@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ChoGMScene.unity
     guid: c2723b30100d9fe4397861474cea035e
   - enabled: 1
-    path: Assets/Cjy/Scenes/Chapter.unity
+    path: Assets/Cjy/Scenes/Lobby.unity
     guid: b0454dd3a35cec24f969efd5ea089557
   - enabled: 1
     path: Assets/Cjy/Scenes/Title.unity
