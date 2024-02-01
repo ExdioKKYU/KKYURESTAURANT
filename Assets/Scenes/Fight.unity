@@ -4747,7 +4747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p_percentages:
   - 1
-  - 0
+  - 1
   - 0
   - 1
   - 0
@@ -4755,8 +4755,10 @@ MonoBehaviour:
   - {fileID: 7621921547302938964, guid: ed5db58bfcf3dac408ffd5db281725da, type: 3}
   rush_tank_percentage:
   - 1
-  guard_tank: []
-  guard_tank_percentage: []
+  guard_tank:
+  - {fileID: 8064528038850844568, guid: 1a99a46510be36b47a5405f70f09b2a0, type: 3}
+  guard_tank_percentage:
+  - 1
   close_deal: []
   close_deal_percentage: []
   long_deal:
