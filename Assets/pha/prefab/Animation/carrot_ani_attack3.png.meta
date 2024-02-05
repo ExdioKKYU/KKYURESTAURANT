@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a66c7a595b84ee4aaa1deadea7b263d
+guid: 8143169bd8d592b408261e664d502307
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,6 +69,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carrot_ani_death2_0
+      name: carrot_ani_attack3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 6000
-        width: 1000
-        height: 1000
+        y: 3600
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6423c420c4c50ad4f9c5bce6d67174e1
-      internalID: 1701298796
+      spriteID: e7159c038025cc24fb41f6c43adb5880
+      internalID: 864182838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_1
+      name: carrot_ani_attack3_1
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 6000
-        width: 1000
-        height: 1000
+        x: 600
+        y: 3600
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd9697f412b4b7242b2dcdc84cd94212
-      internalID: 2091469126
+      spriteID: d7ffc9ac75b3d1f44bb58b749ef57cc5
+      internalID: 707814003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_2
+      name: carrot_ani_attack3_2
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 6000
-        width: 1000
-        height: 1000
+        x: 1200
+        y: 3600
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f22675b0da4286428ace9bda500f872
-      internalID: -1318646983
+      spriteID: ad91e0c04ddbf1e47bca5fd52ea03394
+      internalID: -1678784249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_3
+      name: carrot_ani_attack3_3
       rect:
         serializedVersion: 2
-        x: 3000
-        y: 6000
-        width: 1000
-        height: 1000
+        x: 1800
+        y: 3600
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9665bb5124f3e934fa8431e14190a515
-      internalID: -1523641184
+      spriteID: 90140ad97b715e441860ff7db1c204f0
+      internalID: -1695112060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_4
+      name: carrot_ani_attack3_4
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 6000
-        width: 1000
-        height: 1000
+        x: 2400
+        y: 3600
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,125 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41149b32ec7b4c544a69a51f974234f1
-      internalID: -32833833
+      spriteID: c7d9f28251ef8f744a4bbccee2a982bd
+      internalID: 657476739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_5
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5668c57d1e652ab4294a62db1c2c8d33
-      internalID: 614848107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_6
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 6000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26f75b78802b8f0419430e4aee25eb56
-      internalID: 451428465
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ddc910289fd67c4b841a0a5794d20cb
-      internalID: -780810437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_8
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6cb14b798e0a494fa3ad09e5be091cc
-      internalID: -1602401124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_9
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 563110b4e2ac665428819d6801ec7964
-      internalID: -128755491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_10
+      name: carrot_ani_attack3_5
       rect:
         serializedVersion: 2
         x: 3000
-        y: 5000
-        width: 1000
-        height: 1000
+        y: 3600
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0930325b6f69e6246859f3e80bb9650b
-      internalID: 2100314232
+      spriteID: 679b410995b38f242a6b64355e594fe5
+      internalID: 1557699552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_11
+      name: carrot_ani_attack3_6
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 5000
-        width: 1000
-        height: 1000
+        x: 3600
+        y: 3600
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,209 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77190309ba9f82e47b0f392c31fd096b
-      internalID: -336362568
+      spriteID: f403deee946bf5e4fbb59d04c12ff4a1
+      internalID: 1673387077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_12
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5ad6c2a86a8da949b3da50f080050cb
-      internalID: 234495754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_13
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 5000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2df33745c7e18147ae65daba7dfd20b
-      internalID: -1507774102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48528994b06a3d44b9f8abac5dae37a7
-      internalID: -1191627171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_15
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 4000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e2db161a3178944c936b88b415d22fc
-      internalID: -200225834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_16
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 4000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d637626a91b98d846b62e8650ef4810e
-      internalID: 2101703886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_17
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 4000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee8de46fad998a846ab85c27358cd50b
-      internalID: -100632863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_18
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 4000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a9f31472af674d4ea9bd62b9d291fbb
-      internalID: 1854087111
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_19
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 4000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e05027c3d8a9c942baf697d1d86c5df
-      internalID: 861171754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_20
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 4000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09a139fae524d95479c4cfc68bb78838
-      internalID: -1879791467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_21
+      name: carrot_ani_attack3_7
       rect:
         serializedVersion: 2
         x: 0
         y: 3000
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 006966d50f928cc4cba13c8eefa97351
-      internalID: 1013817570
+      spriteID: 8724f6084d5af9f46a68a5a857ec2614
+      internalID: 86767815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_22
+      name: carrot_ani_attack3_8
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 600
         y: 3000
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7005e2fd2d1cfa4a81e462be8a42d4a
-      internalID: 1120487918
+      spriteID: 2a06faa1d891ff94fb348c1df6f1ab06
+      internalID: -882839925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_23
+      name: carrot_ani_attack3_9
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 1200
         y: 3000
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,20 +326,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7f018b60d71dcf4d85076284e01b437
-      internalID: -610733914
+      spriteID: 82ce49de2872b534e880e788101e44cd
+      internalID: 2080740637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_24
+      name: carrot_ani_attack3_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3000
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34a015e3c15e4e428fed4c0a2f6b7ad
+      internalID: -608140051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3000
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6917069ed6aa7c3478518f8cb2e2d2d7
+      internalID: -318964677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_12
       rect:
         serializedVersion: 2
         x: 3000
         y: 3000
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f22791da65383cc469c857551ee9f81b
-      internalID: -1485209702
+      spriteID: 77c5e92fab98521448e04dc2e110d2d1
+      internalID: 30198971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_25
+      name: carrot_ani_attack3_13
       rect:
         serializedVersion: 2
-        x: 4000
+        x: 3600
         y: 3000
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -649,62 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ab747a776b821a419f4037c2de17e2a
-      internalID: -2104750906
+      spriteID: 49f64a72d19f1164796a33da1405ea47
+      internalID: 808104427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_26
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 3000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a2ef3b488e0e1c408e3897b703399d6
-      internalID: 1563919697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_27
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 3000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 951598da3bbd2a1468a0fd1f170aaf8f
-      internalID: 1616165161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_28
+      name: carrot_ani_attack3_14
       rect:
         serializedVersion: 2
         x: 0
-        y: 2000
-        width: 1000
-        height: 1000
+        y: 2400
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,20 +431,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2d49fefc3ce4bf4e9b4c973d06553fe
-      internalID: 1886545461
+      spriteID: ca21791e6636bf841852213fab4fb3f8
+      internalID: -1643008179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_29
+      name: carrot_ani_attack3_15
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 2000
-        width: 1000
-        height: 1000
+        x: 600
+        y: 2400
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,20 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a88acb674d20cc94c956e6127484c055
-      internalID: -1654876131
+      spriteID: d9ed6cb06d4a9fb40a85789651c616cd
+      internalID: -1149382030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_30
+      name: carrot_ani_attack3_16
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 2000
-        width: 1000
-        height: 1000
+        x: 1200
+        y: 2400
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,20 +473,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c27d902308743b4d900c2fea6b468eb
-      internalID: -1645785100
+      spriteID: c8d29c087eba86842b0ee0beb0d5c96e
+      internalID: 2144072098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_31
+      name: carrot_ani_attack3_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2400
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199894b5efe58094baa4205c0d042153
+      internalID: 1354756140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_18
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2400
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6f94296a8cd5b4fa6e354f8621233d
+      internalID: 2147202988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_19
       rect:
         serializedVersion: 2
         x: 3000
-        y: 2000
-        width: 1000
-        height: 1000
+        y: 2400
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0b01676521c2e7468ecc30b0464df0c
-      internalID: -1756894776
+      spriteID: 346da84123325934ea299962b60608a8
+      internalID: -1394143976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_32
+      name: carrot_ani_attack3_20
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 2000
-        width: 1000
-        height: 1000
+        x: 3600
+        y: 2400
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -796,62 +557,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb89716a1a5a8904da1cd5022eb451ce
-      internalID: -338249994
+      spriteID: 24f9d166da4ef4a459659d41ad644fb5
+      internalID: -326693412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_33
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba82093d02910dd4183d63aa7afbd5ed
-      internalID: 96294781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_34
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f199c224598924d4e8411b3733b54313
-      internalID: 448291955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_35
+      name: carrot_ani_attack3_21
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
-        width: 1000
-        height: 1000
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -859,20 +578,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 387c5844b5d371847af8c29729053c1f
-      internalID: -1986515715
+      spriteID: 12ac9db88ed495e48a9fb21dcddc3c84
+      internalID: -284188087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_36
+      name: carrot_ani_attack3_22
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 1000
-        width: 1000
-        height: 1000
+        x: 600
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,20 +599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a9001d7e1701894a91ddeb7c91c5df5
-      internalID: 1008959934
+      spriteID: 0f7c1e8ed4b537947bb432326ed0aac6
+      internalID: -238834320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_37
+      name: carrot_ani_attack3_23
       rect:
         serializedVersion: 2
-        x: 2000
-        y: 1000
-        width: 1000
-        height: 1000
+        x: 1200
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,20 +620,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df88c74da072ae34f8280dfaca8ea021
-      internalID: -500939916
+      spriteID: ed07ca08322bfc74b92715c6edfe7e94
+      internalID: -898414036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_38
+      name: carrot_ani_attack3_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1800
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3016d5da849422046960b62e95d57150
+      internalID: 829387624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1800
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eac15a13b2134849816ee012deb6450
+      internalID: 337030004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_26
       rect:
         serializedVersion: 2
         x: 3000
-        y: 1000
-        width: 1000
-        height: 1000
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,20 +683,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68a5b6c455dfe754f9713411608f125a
-      internalID: -632684346
+      spriteID: 7f06b17db97e9dc4e8e9531943ee9213
+      internalID: 830702450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_39
+      name: carrot_ani_attack3_27
       rect:
         serializedVersion: 2
-        x: 4000
-        y: 1000
-        width: 1000
-        height: 1000
+        x: 3600
+        y: 1800
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,20 +704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 235133c087ee86748a500d527110b08c
-      internalID: 341760365
+      spriteID: 4ef084e05337e16409009cd5b25e4260
+      internalID: -1343187022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_40
+      name: carrot_ani_attack3_28
       rect:
         serializedVersion: 2
-        x: 5000
-        y: 1000
-        width: 1000
-        height: 1000
+        x: 0
+        y: 1200
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -964,20 +725,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7daac6d6babc214479afd39e6b28673f
-      internalID: 789373789
+      spriteID: 246ef9e76bd36f046b10ef2ff25c8b76
+      internalID: -1102914323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_41
+      name: carrot_ani_attack3_29
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 1000
-        width: 1000
-        height: 1000
+        x: 600
+        y: 1200
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,20 +746,272 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9881eb14d26b4c14dbb685422d9ddd63
-      internalID: 1823463251
+      spriteID: fcb5edcbc266a124cb527c8e7fdacefa
+      internalID: -1333622876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_42
+      name: carrot_ani_attack3_30
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a67e6ac68405604380ea6059bd7c764
+      internalID: 504997164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_31
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8a0e71d235e2a44a861768f71c63f3
+      internalID: -707630017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_32
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b5b4ed801b50743be725e4bd8c5e2e
+      internalID: 1468046516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_33
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478b5eb43f823c9439910f2ce1540b7b
+      internalID: 21817542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_34
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92933a3642b46984282f0c2d6cfb4625
+      internalID: 387127733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d82f4f7f708fb46951019815ee5d55
+      internalID: -194926292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec293cc838eeb8142a877ee12fcccb75
+      internalID: 1915509317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_37
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58e76e94b9ccb14dabd47a76d344724
+      internalID: -1654948499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_38
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07ff2c8cf72458458cb67dbf1c3cf2a
+      internalID: -150162754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd58a30814796584680b3d65f709b3b2
+      internalID: -735970173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_40
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5f9945add868948bc28f9e3487129d
+      internalID: -2019121772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_41
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6d6c48ae9b68849bbeee6c977b8111
+      internalID: 78283601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_42
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1006,20 +1019,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa208981ec919854085dbff7a24038f4
-      internalID: 182536351
+      spriteID: 85c1aa06ff4797845876966ced2c0d7c
+      internalID: -1841310568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_43
+      name: carrot_ani_attack3_43
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 600
         y: 0
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1027,20 +1040,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 404db866dd5d67343888ae2db0b9195d
-      internalID: -1886505771
+      spriteID: 54adb264243f9e84d853c2dfe147f23e
+      internalID: -1916643204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_44
+      name: carrot_ani_attack3_44
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 1200
         y: 0
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1048,20 +1061,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 781b3a936bc06354fb9406e9f1179718
-      internalID: 286565025
+      spriteID: 97b47ffea40186b429df9053abbab483
+      internalID: 1304107847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_45
+      name: carrot_ani_attack3_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7325da3b54cee2340ad4ebffe0ac1a3c
+      internalID: -184474352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171fa2e1d0f4e2044b21cfa639e6823b
+      internalID: -1466156953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_ani_attack3_47
       rect:
         serializedVersion: 2
         x: 3000
         y: 0
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1069,20 +1124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21218823ecf258542a6ffc4bb0c1730f
-      internalID: 489293301
+      spriteID: 8291bf63acad0d944804e47dab0bc6f0
+      internalID: -508559748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot_ani_death2_46
+      name: carrot_ani_attack3_48
       rect:
         serializedVersion: 2
-        x: 4000
+        x: 3600
         y: 0
-        width: 1000
-        height: 1000
+        width: 600
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1090,50 +1145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb352fbd6d1f5d046a60a1414e1610b1
-      internalID: -419191558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_47
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2f037b034a318a46b326f2627815150
-      internalID: 942178029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot_ani_death2_48
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a92d1e9981d8ed49a353a21120a6257
-      internalID: 65988344
+      spriteID: c30e109317f21ff4bbca954e5aeec963
+      internalID: 1930566751
       vertices: []
       indices: 
       edges: []
@@ -1149,55 +1162,55 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      carrot_ani_death2_0: 1701298796
-      carrot_ani_death2_1: 2091469126
-      carrot_ani_death2_10: 2100314232
-      carrot_ani_death2_11: -336362568
-      carrot_ani_death2_12: 234495754
-      carrot_ani_death2_13: -1507774102
-      carrot_ani_death2_14: -1191627171
-      carrot_ani_death2_15: -200225834
-      carrot_ani_death2_16: 2101703886
-      carrot_ani_death2_17: -100632863
-      carrot_ani_death2_18: 1854087111
-      carrot_ani_death2_19: 861171754
-      carrot_ani_death2_2: -1318646983
-      carrot_ani_death2_20: -1879791467
-      carrot_ani_death2_21: 1013817570
-      carrot_ani_death2_22: 1120487918
-      carrot_ani_death2_23: -610733914
-      carrot_ani_death2_24: -1485209702
-      carrot_ani_death2_25: -2104750906
-      carrot_ani_death2_26: 1563919697
-      carrot_ani_death2_27: 1616165161
-      carrot_ani_death2_28: 1886545461
-      carrot_ani_death2_29: -1654876131
-      carrot_ani_death2_3: -1523641184
-      carrot_ani_death2_30: -1645785100
-      carrot_ani_death2_31: -1756894776
-      carrot_ani_death2_32: -338249994
-      carrot_ani_death2_33: 96294781
-      carrot_ani_death2_34: 448291955
-      carrot_ani_death2_35: -1986515715
-      carrot_ani_death2_36: 1008959934
-      carrot_ani_death2_37: -500939916
-      carrot_ani_death2_38: -632684346
-      carrot_ani_death2_39: 341760365
-      carrot_ani_death2_4: -32833833
-      carrot_ani_death2_40: 789373789
-      carrot_ani_death2_41: 1823463251
-      carrot_ani_death2_42: 182536351
-      carrot_ani_death2_43: -1886505771
-      carrot_ani_death2_44: 286565025
-      carrot_ani_death2_45: 489293301
-      carrot_ani_death2_46: -419191558
-      carrot_ani_death2_47: 942178029
-      carrot_ani_death2_48: 65988344
-      carrot_ani_death2_5: 614848107
-      carrot_ani_death2_6: 451428465
-      carrot_ani_death2_7: -780810437
-      carrot_ani_death2_8: -1602401124
-      carrot_ani_death2_9: -128755491
+      carrot_ani_attack3_0: 864182838
+      carrot_ani_attack3_1: 707814003
+      carrot_ani_attack3_10: -608140051
+      carrot_ani_attack3_11: -318964677
+      carrot_ani_attack3_12: 30198971
+      carrot_ani_attack3_13: 808104427
+      carrot_ani_attack3_14: -1643008179
+      carrot_ani_attack3_15: -1149382030
+      carrot_ani_attack3_16: 2144072098
+      carrot_ani_attack3_17: 1354756140
+      carrot_ani_attack3_18: 2147202988
+      carrot_ani_attack3_19: -1394143976
+      carrot_ani_attack3_2: -1678784249
+      carrot_ani_attack3_20: -326693412
+      carrot_ani_attack3_21: -284188087
+      carrot_ani_attack3_22: -238834320
+      carrot_ani_attack3_23: -898414036
+      carrot_ani_attack3_24: 829387624
+      carrot_ani_attack3_25: 337030004
+      carrot_ani_attack3_26: 830702450
+      carrot_ani_attack3_27: -1343187022
+      carrot_ani_attack3_28: -1102914323
+      carrot_ani_attack3_29: -1333622876
+      carrot_ani_attack3_3: -1695112060
+      carrot_ani_attack3_30: 504997164
+      carrot_ani_attack3_31: -707630017
+      carrot_ani_attack3_32: 1468046516
+      carrot_ani_attack3_33: 21817542
+      carrot_ani_attack3_34: 387127733
+      carrot_ani_attack3_35: -194926292
+      carrot_ani_attack3_36: 1915509317
+      carrot_ani_attack3_37: -1654948499
+      carrot_ani_attack3_38: -150162754
+      carrot_ani_attack3_39: -735970173
+      carrot_ani_attack3_4: 657476739
+      carrot_ani_attack3_40: -2019121772
+      carrot_ani_attack3_41: 78283601
+      carrot_ani_attack3_42: -1841310568
+      carrot_ani_attack3_43: -1916643204
+      carrot_ani_attack3_44: 1304107847
+      carrot_ani_attack3_45: -184474352
+      carrot_ani_attack3_46: -1466156953
+      carrot_ani_attack3_47: -508559748
+      carrot_ani_attack3_48: 1930566751
+      carrot_ani_attack3_5: 1557699552
+      carrot_ani_attack3_6: 1673387077
+      carrot_ani_attack3_7: 86767815
+      carrot_ani_attack3_8: -882839925
+      carrot_ani_attack3_9: 2080740637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
