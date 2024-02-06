@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 900
-  DEF: 30
+  DEF: 0.3
   Hit: 0
 --- !u!95 &5828587452004252976
 Animator:
