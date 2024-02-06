@@ -11,7 +11,7 @@ public class Dex_atk : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 5f);    //시간이 지나면 사라지기
+        Destroy(gameObject, 1.5f);    //시간이 지나면 사라지기
     }
 
     // Update is called once per frame

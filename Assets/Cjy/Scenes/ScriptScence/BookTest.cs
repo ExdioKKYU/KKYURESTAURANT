@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class book : MonoBehaviour
+
+public class BookTest : MonoBehaviour
 {
     [SerializeField] float pagesSpeed = 0.5f;
-    [SerializeField] List<RectTransform> pages;
-    int index = 0;
+    [SerializeField] List<Transform> pages;  // RectTransform 대신 Transform을 사용
 
+    int index = 0;
     bool isRotating = false;
 
     public void RotateForward()
