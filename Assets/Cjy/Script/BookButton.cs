@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestBookButton : MonoBehaviour
+public class BookButton : MonoBehaviour
 {
     public GameObject[] images;
     private int currentIndex = 0;
