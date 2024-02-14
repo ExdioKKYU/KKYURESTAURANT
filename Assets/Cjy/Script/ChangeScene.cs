@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public void Title()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
     public void Lobby()
     {
         SceneManager.LoadScene("Lobby");
