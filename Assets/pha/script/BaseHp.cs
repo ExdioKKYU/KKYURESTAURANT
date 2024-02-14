@@ -53,6 +53,11 @@ public class BaseHp : MonoBehaviour
             }
 
             //이름을 가진 단일 오브젝트를 찾아서 삭제
+            GameObject objectWithNameG = GameObject.Find("GameManager");
+            if (objectWithNameG != null)
+            {
+                Destroy(objectWithNameG);
+            }
             GameObject objectWithNameS = GameObject.Find("Spawner");
             if (objectWithNameS != null)
             {
@@ -79,6 +84,18 @@ public class BaseHp : MonoBehaviour
             }
 
             canvas.SetActive(true);
+
+            Camera mainCamera = Camera.main;
+            if (mainCamera != null)
+            {
+                // AudioSource 찾기
+                AudioSource audioSource = mainCamera.GetComponent<AudioSource>();
+                if (audioSource != null)
+                {
+                    // AudioSource 제거
+                    Destroy(audioSource);
+                }
+            }
         }
     }
 }

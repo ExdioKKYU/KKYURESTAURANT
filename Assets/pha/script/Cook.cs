@@ -6,25 +6,25 @@ public class Cook : MonoBehaviour
 {
     public GameObject KimbobPrefab;
     public GameObject Little_KimbobPrefab;
-    public GameObject Pork_cutletPrefab;
-    public GameObject Fried_sweet_potatoPrefab;
-    public GameObject TteokbokkiPrefab;
-    public GameObject SotteokPrefab;
-    public GameObject RabokkiPrefab;
-    public GameObject OmeletPrefab;
-    public GameObject RamenPrefab;
+    //public GameObject Pork_cutletPrefab;
+    //public GameObject Fried_sweet_potatoPrefab;
+    //public GameObject TteokbokkiPrefab;
+    //public GameObject SotteokPrefab;
+    //public GameObject RabokkiPrefab;
+    //public GameObject OmeletPrefab;
+    //public GameObject RamenPrefab;
 
     private bool bBob;
     private bool bKim;
-    private bool bPork;
-    private bool bSweet_potato;
+    //private bool bPork;
+    //private bool bSweet_potato;
     private bool bSausage;
     private bool bCarrot;
-    private bool bRice_cake;
-    private bool bNoodle;
-    private bool bSecret_sauce;
-    private bool bEgg;
-    private bool bFish_cake;
+    //private bool bRice_cake;
+    //private bool bNoodle;
+    //private bool bSecret_sauce;
+    //private bool bEgg;
+    //private bool bFish_cake;
     private bool bRice_roll;
 
     public float PosX;
@@ -148,14 +148,14 @@ public class Cook : MonoBehaviour
         {
             bKim = true;
         }
-        if (other.CompareTag("Pork"))
-        {
-            bPork = true;
-        }
-        if (other.CompareTag("Sweet_potato"))
-        {
-            bSweet_potato = true;
-        }
+        //if (other.CompareTag("Pork"))
+        //{
+        //    bPork = true;
+        //}
+        //if (other.CompareTag("Sweet_potato"))
+        //{
+        //    bSweet_potato = true;
+        //}
         if (other.CompareTag("Sausage"))
         {
             bSausage = true;
@@ -164,30 +164,30 @@ public class Cook : MonoBehaviour
         {
             bCarrot = true;
         }
-        if (other.CompareTag("Rice_cake"))
-        {
-            bRice_cake = true;
-        }
-        if (other.CompareTag("Noodle"))
-        {
-            bNoodle = true;
-        }
-        if (other.CompareTag("Secret_sauce"))
-        {
-            bSecret_sauce = true;
-        }
-        if (other.CompareTag("Egg"))
-        {
-            bEgg = true;
-        }
-        if (other.CompareTag("Fish_cake"))
-        {
-            bFish_cake = true;
-        }
-        if (other.CompareTag("Rice_roll"))
-        {
-            bRice_roll = true;
-        }
+        //if (other.CompareTag("Rice_cake"))
+        //{
+        //    bRice_cake = true;
+        //}
+        //if (other.CompareTag("Noodle"))
+        //{
+        //    bNoodle = true;
+        //}
+        //if (other.CompareTag("Secret_sauce"))
+        //{
+        //    bSecret_sauce = true;
+        //}
+        //if (other.CompareTag("Egg"))
+        //{
+        //    bEgg = true;
+        //}
+        //if (other.CompareTag("Fish_cake"))
+        //{
+        //    bFish_cake = true;
+        //}
+        //if (other.CompareTag("Rice_roll"))
+        //{
+        //    bRice_roll = true;
+        //}
 
     }
 
@@ -201,14 +201,14 @@ public class Cook : MonoBehaviour
         {
             bKim = false;
         }
-        if (other.CompareTag("Pork"))
-        {
-            bPork = false;
-        }
-        if (other.CompareTag("Sweet_potato"))
-        {
-            bSweet_potato = false;
-        }
+        //if (other.CompareTag("Pork"))
+        //{
+        //    bPork = false;
+        //}
+        //if (other.CompareTag("Sweet_potato"))
+        //{
+        //    bSweet_potato = false;
+        //}
         if (other.CompareTag("Sausage"))
         {
             bSausage = false;
@@ -217,26 +217,26 @@ public class Cook : MonoBehaviour
         {
             bCarrot = false;
         }
-        if (other.CompareTag("Rice_cake"))
-        {
-            bRice_cake = false;
-        }
-        if (other.CompareTag("Noodle"))
-        {
-            bNoodle = false;
-        }
-        if (other.CompareTag("Secret_sauce"))
-        {
-            bSecret_sauce = false;
-        }
-        if (other.CompareTag("Egg"))
-        {
-            bEgg = false;
-        }
-        if (other.CompareTag("Fish_cake"))
-        {
-            bFish_cake = false;
-        }
+        //if (other.CompareTag("Rice_cake"))
+        //{
+        //    bRice_cake = false;
+        //}
+        //if (other.CompareTag("Noodle"))
+        //{
+        //    bNoodle = false;
+        //}
+        //if (other.CompareTag("Secret_sauce"))
+        //{
+        //    bSecret_sauce = false;
+        //}
+        //if (other.CompareTag("Egg"))
+        //{
+        //    bEgg = false;
+        //}
+        //if (other.CompareTag("Fish_cake"))
+        //{
+        //    bFish_cake = false;
+        //}
         if (other.CompareTag("Rice_roll"))
         {
             bRice_roll = false;
@@ -248,15 +248,15 @@ public class Cook : MonoBehaviour
     void Start()
     {
         bBob = false;
-        bPork = false;
-        bSweet_potato = false;
+        //bPork = false;
+        //bSweet_potato = false;
         bSausage = false;
         bCarrot= false;
-        bRice_cake = false;
-        bNoodle = false;
-        bSecret_sauce = false;
-        bEgg = false;
-        bFish_cake = false;
+        //bRice_cake = false;
+        //bNoodle = false;
+        //bSecret_sauce = false;
+        //bEgg = false;
+        //bFish_cake = false;
 }
 
     // Update is called once per frame
