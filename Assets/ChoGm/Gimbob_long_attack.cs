@@ -60,9 +60,9 @@ public class Gimbob_long_attack : MonoBehaviour
         //총알 위치의 Y값 고려할것
         if (attack && my_at_sp >= AT_sp)
         {
-            Vector3 spawnPosition1 = new Vector3(pos.position.x, -2, pos.position.z);
-            Vector3 spawnPosition2 = new Vector3(pos.position.x, 0, pos.position.z);
-            Vector3 spawnPosition3 = new Vector3(pos.position.x, 2, pos.position.z);
+            Vector3 spawnPosition1 = new Vector3(pos.position.x, 1f, pos.position.z);
+            Vector3 spawnPosition2 = new Vector3(pos.position.x, -0.8f, pos.position.z);
+            Vector3 spawnPosition3 = new Vector3(pos.position.x, -2.6f, pos.position.z);
             Instantiate(str_Prefab, spawnPosition1, transform.rotation);
             Instantiate(str_Prefab, spawnPosition2, transform.rotation);
             Instantiate(str_Prefab, spawnPosition3, transform.rotation);
