@@ -176,9 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a2db9c6a6421c4285d09f097a50c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 3
   speed: 0
-  rangeUnit: 1
+  rangeUnit: 1.5
 --- !u!114 &6739439819270393808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AT_sp: 2.5
-  range: 1.1
+  AT_sp: 3
+  range: 1.7
   ATK_S: 7
 --- !u!114 &4946465719441422613
 MonoBehaviour:
@@ -218,9 +218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 70
+  HP: 900
   DEF: 0.3
-  Hit: 5
+  Hit: 0
 --- !u!95 &5828587452004252976
 Animator:
   serializedVersion: 5

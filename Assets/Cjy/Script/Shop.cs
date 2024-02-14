@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; //추가
 using UnityEngine.SceneManagement; //추가
+using UnityEditor.VersionControl;
 
 public class Shop : MonoBehaviour
 {
