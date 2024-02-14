@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shot_speed: 10
-  ATK_L: 10
+  ATK_L: 2
 --- !u!61 &-2454073916659996370
 BoxCollider2D:
   m_ObjectHideFlags: 0
