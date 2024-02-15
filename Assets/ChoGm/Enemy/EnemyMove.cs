@@ -6,12 +6,16 @@ using UnityEngine;
 public class EnemyMove : MonoBehaviour
 {
     public float moveSpeed;
-    private float speed;
+    public float speed;
     public float rangeEnemy;   // 유닛의 사거리에 따른 스크립트 받아오기
+
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         speed = 0;   // 유닛의 사거리에 따른 스크립트 받아오기
     }
 
@@ -35,6 +39,20 @@ public class EnemyMove : MonoBehaviour
             {
                 speed = 0;
             }
+            if (speed <= 0.01)
+            {
+                animator.SetBool("Walk", false);
+            }
+        }
+
+
+        if (speed <= 0.01)
+        {
+            animator.SetBool("Walk", false);
+        }
+        if (speed > 0.1)
+        {
+            animator.SetBool("Walk", true);
         }
 
         // Move the unit based on the calculated speed

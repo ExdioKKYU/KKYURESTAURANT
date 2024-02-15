@@ -39,12 +39,16 @@ public class UnitMove : MonoBehaviour
             {
                 speed = 0;
             }
+            if (speed <= 0.01)
+            {
+                animator.SetBool("Walk", false);
+            }
         }
-        if (speed == 0)
+        if (speed <= 0.01)
         {
             animator.SetBool("Walk", false);
         }
-        if (speed != 0)
+        if (speed > 0.1)
         {
             animator.SetBool("Walk", true);
         }

@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   speed: 0
-  rangeUnit: 1.5
+  rangeUnit: 1.6
 --- !u!114 &4657605270015255450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7da5fe085a724f49881ecc53ecb3b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
-  DEF: 0
+  HP: 45
+  DEF: 0.1
   Hit: 0
 --- !u!114 &6593408132112557786
 MonoBehaviour:
@@ -218,9 +218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66ed7e3135465864e8e2e7b377b76c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AT_sp: 3
-  range: 1.7
-  ATK_S: 10
+  AT_sp: 1
+  range: 1.8
+  ATK_S: 7
 --- !u!114 &8768279401493791905
 MonoBehaviour:
   m_ObjectHideFlags: 0
