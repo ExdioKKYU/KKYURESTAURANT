@@ -41,19 +41,16 @@ public class Spawner_E : MonoBehaviour
     [SerializeField]
     float[] cooltime = new float[2];//생성 쿹타임
 
-    //[SerializeField]
-    //Transform spawnPoint;//스포너
+    [Tooltip("유닛 첫 소환 시간")]
+    [SerializeField]
+    float first_spawn;//첫 유닛 소환
 
     public Transform pos;
     private float cool;
     private int gh = 0;
     private int unit_position;
 
-    //아직 상대의 기지 체력 변수를 연결시켜놓지 않아 오류가 나지 않도록 정의만 해놓음
-    //적군 기지 프로그래밍을 하는 팀원의 스크립트에서 체력변수를 가져올 것임
-    //e_hp = ob.GetComponent <???> ().e_hp;
-    private float e_hp = 7000;
-    //위와 같음 한 열에 아군이 얼마나 존재하는지 (소환될떄 변수에 1씩 더하고 죽을때마다 1씩 감소시킬 예정)
+    //한 열에 아군이 얼마나 존재하는지 (소환될떄 변수에 1씩 더하고 죽을때마다 1씩 감소시킬 예정)
     private int our_unit1 = 0;
     private int our_unit2 = 0;
     private int our_unit3 = 0;
@@ -75,23 +72,29 @@ public class Spawner_E : MonoBehaviour
     private int Egg_cloneCounter = 0;
     private int Fish_cake_cloneCounter = 0;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
         change(original_p, p_percentages);
 
-        cool = 3;
+        cool = first_spawn;
         timeAfterSpawn = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
+        BaseHp BaseHp = GetComponent<BaseHp>();
+        float e_hp = BaseHp.curHealth;
+        float max_hp = BaseHp.maxHealth;
+
         timeAfterSpawn += Time.deltaTime;
 
         //적 기지의 체력이 일정 이하일 경우 적용
-        if (e_hp < 3500)
-            gh = 2;
+        if ((float)e_hp / max_hp < 1/3)
+            gh = 1;
 
         if (timeAfterSpawn >= cool)
         {
@@ -155,18 +158,18 @@ public class Spawner_E : MonoBehaviour
 
                 if (unitPrefab.name == "Sausage_enemy")
                 {
-                    Kim_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Kim_cloneCounter;
+                    Sausage_cloneCounter++;
+                    clonedObject.name = unitPrefab.name + "_Clone" + Sausage_cloneCounter;
                 }
                 else if (unitPrefab.name == "Carrot_enemy")
                 {
-                    Kim_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Kim_cloneCounter;
+                    Carrot_cloneCounter++;
+                    clonedObject.name = unitPrefab.name + "_Clone" + Carrot_cloneCounter;
                 }
                 else
                 {
-                    Sweet_potato_cloneCounter++;
-                    clonedObject.name = unitPrefab.name + "_Clone" + Sweet_potato_cloneCounter;
+                    Rice_cake_cloneCounter++;
+                    clonedObject.name = unitPrefab.name + "_Clone" + Rice_cake_cloneCounter;
                 }
 
                 change(p_percentages, original_p);
@@ -219,7 +222,10 @@ public class Spawner_E : MonoBehaviour
 
             //쿨타임 정하기
             //적 기지의 체력이 일정 이하일 경우 쿨타임을 줄이기(자주 소환되도록 -> 난이도 상승)
-            cool = Random.Range(cooltime[0] - gh, cooltime[1] - gh);
+            if (gh == 0)
+                cool = Random.Range(cooltime[0], cooltime[1]);
+            else
+                cool = Random.Range(cooltime[0], cooltime[1])/2;
             timeAfterSpawn = 0f;
         }
     }
