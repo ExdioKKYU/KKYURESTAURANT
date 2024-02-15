@@ -10,11 +10,6 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("Title");
     }
 
-    public void Lobby()
-    {
-        SceneManager.LoadScene("Lobby");
-    }
-
     public void Stage()
     {
         SceneManager.LoadScene("Stage");
