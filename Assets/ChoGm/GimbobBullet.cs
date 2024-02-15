@@ -18,6 +18,7 @@ public class GimbobBullet : MonoBehaviour
     void Update()
     {
         transform.Translate(transform.right * direction * speed * Time.deltaTime);
+        Destroy(gameObject, 1.0f);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
