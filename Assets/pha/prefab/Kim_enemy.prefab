@@ -221,8 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4afe682f7def03f4e9da67b0aa78972f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  rangeEnemy: 1.5
+  moveSpeed: 2
+  rangeEnemy: 1.1
 --- !u!114 &4911669627853768499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,9 +235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AT_sp_e: 3
-  range_e: 1.7
-  ATK_S_e: 7
+  AT_sp_e: 2.5
+  range_e: 1.3
+  ATK_S_e: 5
 --- !u!114 &4392756141166594106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d465bc75f9c4ca7418c906e98d9b175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_e: 900
-  DEF_e: 30
+  HP_e: 70
+  DEF_e: 0.05
   Hit_e: 0
