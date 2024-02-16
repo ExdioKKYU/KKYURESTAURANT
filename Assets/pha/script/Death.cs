@@ -57,6 +57,10 @@ public class Death : MonoBehaviour
         if (enemy_long_atk != null)
             Destroy(enemy_long_atk);
 
+        MiniGimbob miniGimbob = GetComponent<MiniGimbob>();
+        if (miniGimbob != null)
+            Destroy(miniGimbob);
+
         animator.SetTrigger("Death");
         Destroy(gameObject, 1f);
     }
