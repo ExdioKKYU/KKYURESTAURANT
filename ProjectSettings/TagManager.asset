@@ -32,6 +32,7 @@ TagManager:
   - Rice_roll_e
   - Kimbob
   - Table
+  - Line
   layers:
   - Default
   - TransparentFX

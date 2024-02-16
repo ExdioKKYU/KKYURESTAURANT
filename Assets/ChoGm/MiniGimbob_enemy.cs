@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiniGimbob : MonoBehaviour
+public class MiniGimbob_enemy : MonoBehaviour
 {
     public float Damage;
     private float Attack_Move_Speed;
@@ -19,8 +19,8 @@ public class MiniGimbob : MonoBehaviour
     void Update()
     {
         transform.Translate(Attack_Move_Speed * Time.deltaTime, 0, 0);
-        UnitMove unitMove = GetComponent<UnitMove>();
-        float moveSpeed = unitMove.moveSpeed;
+        EnemyMove enemyMove = GetComponent<EnemyMove>();
+        float moveSpeed = enemyMove.moveSpeed;
         if (Attack_Move_Speed == 0)
         {
             Attack();
@@ -29,11 +29,11 @@ public class MiniGimbob : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Ability_enemy abilityEnemy = collision.GetComponent<Ability_enemy>();
-        if (abilityEnemy != null)
+        Ability ability = collision.GetComponent<Ability>();
+        if (ability != null)
         {
             // HP_e 값이 10 감소
-            abilityEnemy.HP_e -= Damage;
+            ability.HP -= Damage;
         }
     }
 
@@ -51,11 +51,8 @@ public class MiniGimbob : MonoBehaviour
 
     void Attack()
     {
-        GetComponent<UnitMove>().moveSpeed = 0.0f;
-        GetComponent<UnitMove>().rangeUnit = 0.0f;
-        Unit_short_atk unit_short_atk = GetComponent<Unit_short_atk>();
-        if (unit_short_atk != null)
-            Destroy(unit_short_atk);
-        Attack_Move_Speed = 7.0f;
+        GetComponent<EnemyMove>().moveSpeed = 0.0f;
+        GetComponent<EnemyMove>().rangeEnemy = 0.0f;
+        Attack_Move_Speed = -7.0f;
     }
 }

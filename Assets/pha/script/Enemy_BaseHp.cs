@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy_BaseHp : MonoBehaviour
 {
+    public Slider EnemyBaseHPSlider;
+
     public float curHealth;
     public float maxHealth;
 
@@ -24,6 +27,7 @@ public class Enemy_BaseHp : MonoBehaviour
 
     private void UpdateHpSlider()
     {
+        EnemyBaseHPSlider.value = (float)curHealth / maxHealth;
     }
 
     private void EndFight()
