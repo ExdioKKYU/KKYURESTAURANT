@@ -25,4 +25,9 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene("Book");
     }
+
+    public void InGame2()
+    {
+        SceneManager.LoadScene("pha");
+    }
 }
