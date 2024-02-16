@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
@@ -26,8 +25,4 @@ public class ButtonController : MonoBehaviour
         menuPanel.SetActive(false);
     }
 
-    public void Home_Scene()
-    {
-        SceneManager.LoadScene("Kjs");
-    }
 }
