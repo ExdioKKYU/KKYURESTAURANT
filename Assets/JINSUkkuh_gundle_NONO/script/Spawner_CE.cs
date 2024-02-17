@@ -26,6 +26,8 @@ public class Spawner_CE : MonoBehaviour
     public Transform pos;
     private float cool;
     private int gh = 0;
+    private float e_hp;
+    private float max_hp;
 
     private int Kimbob_cloneCounter = 0;
     private int Little_Kimbob_cloneCounter = 0;
@@ -55,8 +57,11 @@ public class Spawner_CE : MonoBehaviour
     void Update()
     {
         Enemy_BaseHp BaseHp = GetComponent<Enemy_BaseHp>();
-        float e_hp = BaseHp.curHealth;
-        float max_hp = BaseHp.maxHealth;
+        if (BaseHp != null)
+        {
+            float e_hp = BaseHp.curHealth;
+            float max_hp = BaseHp.maxHealth;
+        }
 
         timeAfterSpawn += Time.deltaTime;
 

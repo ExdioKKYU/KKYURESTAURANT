@@ -54,6 +54,8 @@ public class Spawner_E : MonoBehaviour
     private int our_unit1 = 0;
     private int our_unit2 = 0;
     private int our_unit3 = 0;
+    private float e_hp;
+    private float max_hp;
 
     private float[] original_p = new float[5];
 
@@ -87,8 +89,11 @@ public class Spawner_E : MonoBehaviour
     void Update()
     {
         Enemy_BaseHp BaseHp = GetComponent<Enemy_BaseHp>();
-        float e_hp = BaseHp.curHealth;
-        float max_hp = BaseHp.maxHealth;
+        if (BaseHp != null)
+        {
+            float e_hp = BaseHp.curHealth;
+            float max_hp = BaseHp.maxHealth;
+        }
 
         timeAfterSpawn += Time.deltaTime;
 
