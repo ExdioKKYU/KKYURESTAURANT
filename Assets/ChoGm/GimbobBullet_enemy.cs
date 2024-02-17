@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GimbobBullet : MonoBehaviour
+public class GimbobBullet_enemy : MonoBehaviour
 {
     public float speed;
     public float damage;
@@ -17,17 +17,17 @@ public class GimbobBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(transform.right * speed * Time.deltaTime);
+        transform.Translate(transform.right * -speed * Time.deltaTime);
         Destroy(gameObject, destroyTime);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Ability_enemy abilityEnemy = collision.GetComponent<Ability_enemy>();
-        if (abilityEnemy != null)
+        Ability ability = collision.GetComponent<Ability>();
+        if (ability != null)
         {
             // HP_e 값이 10 감소
-            abilityEnemy.HP_e -= damage;
+            ability.HP -= damage;
         }
     }
 
