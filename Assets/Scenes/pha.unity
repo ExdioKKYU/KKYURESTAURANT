@@ -2188,6 +2188,7 @@ MonoBehaviour:
   cooltime:
   - 2
   - 4
+  first_spawn: 0
   pos: {fileID: 378296174}
 --- !u!4 &378296174
 Transform:
