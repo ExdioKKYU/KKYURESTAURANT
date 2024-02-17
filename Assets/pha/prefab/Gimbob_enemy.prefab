@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d465bc75f9c4ca7418c906e98d9b175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_e: 99999
+  HP_e: 70
   DEF_e: 0
   Hit_e: 0
 --- !u!114 &1174773867439153250
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AT_sp: 1
   range: 7
-  str_Prefab: {fileID: 363471167863586572, guid: 448a1888bb43bc144ac0838065ee1c09, type: 3}
+  str_Prefab: {fileID: 1701773224426128057, guid: d7ee38219348cde49b45fd2b6ab6d3ab, type: 3}
   pos: {fileID: 490010918919612109}
 --- !u!114 &2806233719648674871
 MonoBehaviour:
