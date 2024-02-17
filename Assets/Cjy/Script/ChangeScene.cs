@@ -15,17 +15,6 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("Stage");
     }
 
-    public void InGame()
-    {
-        SceneManager.LoadScene("CJY");
-        Debug.Log("√º¿Œ¡ˆ æ¿");
-    }
-
-    public void book()
-    {
-        SceneManager.LoadScene("Book");
-    }
-
     public void InGame2()
     {
         SceneManager.LoadScene("pha");
