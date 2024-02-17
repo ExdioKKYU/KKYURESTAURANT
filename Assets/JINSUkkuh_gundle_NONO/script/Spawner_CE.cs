@@ -13,11 +13,9 @@ public class Spawner_CE : MonoBehaviour
     [SerializeField]
     float[] cook_percentage;//요리 유닛별 소환 확률
 
+    [Tooltip("최소값, 최대값")]
     [SerializeField]
-    Transform spawnPoint;//스포너
-
-    [SerializeField]
-    float[] cooltime;//생성 쿹타임
+    float[] cooltime = new float[2];//생성 쿹타임
 
     [Tooltip("유닛 첫 소환 시간")]
     [SerializeField]
@@ -156,15 +154,15 @@ public class Spawner_CE : MonoBehaviour
         //각 열의 좌표를 입력할 예정
         if (line == 0)
         {
-            objectTransform.position = new Vector2(0.0f, 0.0f);
+            objectTransform.position = new Vector2(33.0f, 1.0f);
         }
         if (line == 1)
         {
-            objectTransform.position = new Vector2(0.0f, 0.0f);
+            objectTransform.position = new Vector2(33.0f, -0.8f);
         }
         if (line == 2)
         {
-            objectTransform.position = new Vector2(0.0f, 0.0f);
+            objectTransform.position = new Vector2(33.0f, -2.6f);
         }
     }
 
