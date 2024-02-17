@@ -10,6 +10,11 @@ public class RecallUnit : MonoBehaviour
     public GameObject unitPrefab3;
     public GameObject unitPrefab4;
 
+    public float unit1;
+    public float unit2;
+    public float unit3;
+    public float unit4;
+
     public GameObject Shop;
 
     // º±≈√µ» ¿Ø¥÷¿ª ¿˙¿Â«“ ∫Øºˆ
@@ -41,28 +46,28 @@ public class RecallUnit : MonoBehaviour
     public void OnClickButten1()
     {
         selectedUnitPrefab = unitPrefab1;
-        Shop.GetComponent<Shop>().UnitCoin = 200f;
+        Shop.GetComponent<Shop>().UnitCoin = unit1;
         Debug.Log("¿Ø¥÷ 1");
     }
 
     public void OnClickButten2()
     {
         selectedUnitPrefab = unitPrefab2;
-        Shop.GetComponent<Shop>().UnitCoin = 200f;
+        Shop.GetComponent<Shop>().UnitCoin = unit2;
         Debug.Log("¿Ø¥÷ 2");
     }
 
     public void OnClickButten3()
     {
         selectedUnitPrefab = unitPrefab3;
-        Shop.GetComponent<Shop>().UnitCoin = 300f;
+        Shop.GetComponent<Shop>().UnitCoin = unit3;
         Debug.Log("¿Ø¥÷ 3");
     }
 
     public void OnClickButten4()
     {
         selectedUnitPrefab = unitPrefab4;
-        Shop.GetComponent<Shop>().UnitCoin = 500f;
+        Shop.GetComponent<Shop>().UnitCoin = unit4;
         Debug.Log("¿Ø¥÷ 4");
     }
 
