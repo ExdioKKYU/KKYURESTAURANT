@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shot_speed: -10
-  ATK_L_e: 12
+  ATK_L_e: 8
 --- !u!95 &-726099612470018774
 Animator:
   serializedVersion: 5

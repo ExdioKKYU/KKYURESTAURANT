@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d465bc75f9c4ca7418c906e98d9b175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_e: 50
+  HP_e: 40
   DEF_e: 0
   Hit_e: 0
 --- !u!114 &5473920839436118793
@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
+  Attack_speed: 8
 --- !u!95 &8246232128670668746
 Animator:
   serializedVersion: 5

@@ -5,6 +5,7 @@ using UnityEngine;
 public class MiniGimbob_enemy : MonoBehaviour
 {
     public float Damage;
+    public float Attack_speed;
     private float Attack_Move_Speed;
 
     Animator animator;
@@ -53,6 +54,6 @@ public class MiniGimbob_enemy : MonoBehaviour
     {
         GetComponent<EnemyMove>().moveSpeed = 0.0f;
         GetComponent<EnemyMove>().rangeEnemy = 0.0f;
-        Attack_Move_Speed = -7.0f;
+        Attack_Move_Speed = -Attack_speed;
     }
 }
