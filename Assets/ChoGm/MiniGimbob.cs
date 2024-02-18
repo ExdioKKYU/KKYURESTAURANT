@@ -5,7 +5,9 @@ using UnityEngine;
 public class MiniGimbob : MonoBehaviour
 {
     public float Damage;
+    public float Attack_speed;
     private float Attack_Move_Speed;
+
 
     Animator animator;
     // Start is called before the first frame update
@@ -56,6 +58,6 @@ public class MiniGimbob : MonoBehaviour
         Unit_short_atk unit_short_atk = GetComponent<Unit_short_atk>();
         if (unit_short_atk != null)
             Destroy(unit_short_atk);
-        Attack_Move_Speed = 7.0f;
+        Attack_Move_Speed = Attack_speed;
     }
 }
