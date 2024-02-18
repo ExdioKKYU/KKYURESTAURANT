@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6218795875523732466}
   - component: {fileID: 7532770611715774533}
   - component: {fileID: 4605550403198273932}
+  - component: {fileID: 6484424942384864047}
   - component: {fileID: 7445181588835902890}
   - component: {fileID: 2039690770970825695}
   - component: {fileID: 8985657832099969273}
@@ -163,6 +164,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6484424942384864047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7621921547302938964}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7445181588835902890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  speed: 0
   rangeEnemy: 1.6
 --- !u!114 &2039690770970825695
 MonoBehaviour:
@@ -229,7 +243,7 @@ Animator:
   m_GameObject: {fileID: 7621921547302938964}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c93d87c14625b54f813187951178901, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4d2fd458dcc3d1449b22b18ff32c4001, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

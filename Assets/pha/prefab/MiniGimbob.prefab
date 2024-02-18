@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 8935115178465641138}
   - component: {fileID: 4518670841566634920}
   - component: {fileID: 304772503656441373}
+  - component: {fileID: 7491013722006491472}
   - component: {fileID: 2540389804602278706}
   - component: {fileID: 331225774555861462}
   - component: {fileID: 7028903042370879299}
   - component: {fileID: 5473920839436118793}
-  - component: {fileID: 7491013722006491472}
   - component: {fileID: 8246232128670668746}
   m_Layer: 0
   m_Name: MiniGimbob
@@ -164,6 +164,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7491013722006491472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4300435466837757107}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2540389804602278706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,18 +231,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 10
---- !u!114 &7491013722006491472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4300435466837757107}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &8246232128670668746
 Animator:
   serializedVersion: 5

@@ -6,33 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/pha.unity
-    guid: a93a63e393ccc024699a7894c5148d49
-  - enabled: 1
-    path: Assets/JINSUkkuh_gundle_NONO/scenes/Setting_window.unity
-    guid: fed96c2e3130f3e40b9e81d43673f7ed
-  - enabled: 1
-    path: Assets/Scenes/Kjs.unity
-    guid: 9ad70c251ac3a224ab15dcf71f85cbaf
-  - enabled: 1
-    path: Assets/Scenes/ChoGMScene.unity
-    guid: c2723b30100d9fe4397861474cea035e
-  - enabled: 1
-    path: Assets/Cjy/Scenes/Lobby.unity
-    guid: b0454dd3a35cec24f969efd5ea089557
-  - enabled: 1
     path: Assets/Cjy/Scenes/Title.unity
     guid: 71069976ed9b47e4cb37cf4b9d09e455
   - enabled: 1
     path: Assets/Cjy/Scenes/Stage.unity
     guid: b344898b6af89c64b9422c14c98afdd2
   - enabled: 1
-    path: Assets/Scenes/CJY.unity
-    guid: e6dd59cd46e88a94ab1c796dc3e75932
+    path: Assets/Scenes/Fight.unity
+    guid: acc8841ed2fe88b4b9d5221fe806e708
   - enabled: 1
-    path: Assets/Cjy/Scenes/Book.unity
-    guid: 9f13366d6a6c2a54195c39f152d3c4bb
+    path: Assets/Scenes/pha.unity
+    guid: a93a63e393ccc024699a7894c5148d49
   m_configObjects: {}

@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 8681888761524717140}
   - component: {fileID: 72480188068374175}
   - component: {fileID: 5614085799329563397}
-  - component: {fileID: 2455805326984456813}
   - component: {fileID: 8965782056295853412}
   - component: {fileID: 228104534771603735}
   - component: {fileID: 4367322194457226335}
   - component: {fileID: 4911669627853768499}
   - component: {fileID: 4392756141166594106}
+  - component: {fileID: 2455805326984456813}
   m_Layer: 0
   m_Name: Kim_enemy
   m_TagString: Kim_e
@@ -164,27 +164,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &2455805326984456813
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8064528038850844568}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a2b7decccadcd04a9783d39d34bb7a3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8965782056295853412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,3 +233,24 @@ MonoBehaviour:
   HP_e: 70
   DEF_e: 0.05
   Hit_e: 0
+--- !u!95 &2455805326984456813
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064528038850844568}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a2b7decccadcd04a9783d39d34bb7a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
