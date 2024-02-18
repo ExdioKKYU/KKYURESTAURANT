@@ -235,8 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfab1063404e75a469a7c214a68264ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AT_sp: 1
-  range: 7
+  AT_sp: 2
+  range: 4.2
   str_Prefab: {fileID: 3854511766915240229, guid: 9bc91bb26cc516d499b94b2c104d7a74, type: 3}
   pos: {fileID: 4796958125090714111}
 --- !u!114 &7618732530810971399
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   speed: 0
-  rangeUnit: 6
+  rangeUnit: 4
 --- !u!95 &5347165846048156701
 Animator:
   serializedVersion: 5

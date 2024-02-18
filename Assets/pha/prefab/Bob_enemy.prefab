@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d465bc75f9c4ca7418c906e98d9b175c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP_e: 45
+  HP_e: 50
   DEF_e: 0.1
   Hit_e: 0
 --- !u!114 &6654253775354351090
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AT_sp_e: 1
   range_e: 1.8
-  ATK_S_e: 7
+  ATK_S_e: 8
 --- !u!95 &7699420968742562433
 Animator:
   serializedVersion: 5
