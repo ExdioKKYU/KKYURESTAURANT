@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 3076916859970429726}
   - component: {fileID: 7076552562814528263}
   - component: {fileID: 4453746442238446654}
+  - component: {fileID: -9153190205277999954}
   - component: {fileID: 1477652849799234676}
+  - component: {fileID: 323973190682933159}
   - component: {fileID: 6319374602825392844}
   - component: {fileID: 6736167955196875247}
-  - component: {fileID: 323973190682933159}
   - component: {fileID: 249063531336879646}
   m_Layer: 0
   m_Name: Carrot_enemy
@@ -163,6 +164,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-9153190205277999954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261309276250319759}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1477652849799234676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +190,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   speed: 0
-  rangeEnemy: 1.6
+  rangeEnemy: 2
+--- !u!114 &323973190682933159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261309276250319759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AT_sp_e: 1.5
+  range_e: 2.2
+  ATK_S_e: 15
 --- !u!114 &6319374602825392844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,21 +233,6 @@ MonoBehaviour:
   HP_e: 45
   DEF_e: 0.1
   Hit_e: 0
---- !u!114 &323973190682933159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261309276250319759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3cce245aece9243b6128e399bee32c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AT_sp_e: 1
-  range_e: 1.8
-  ATK_S_e: 15
 --- !u!95 &249063531336879646
 Animator:
   serializedVersion: 5

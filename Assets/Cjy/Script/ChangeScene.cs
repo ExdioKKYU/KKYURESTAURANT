@@ -15,6 +15,11 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("Stage");
     }
 
+    public void InGame1()
+    {
+        SceneManager.LoadScene("Fight");
+    }
+
     public void InGame2()
     {
         SceneManager.LoadScene("pha");
