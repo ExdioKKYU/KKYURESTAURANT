@@ -235,8 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49853620f880dc64da86ae3058625cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AT_sp: 1
-  range: 7
+  AT_sp: 2
+  range: 4.2
   str_Prefab: {fileID: 1701773224426128057, guid: d7ee38219348cde49b45fd2b6ab6d3ab, type: 3}
   pos: {fileID: 490010918919612109}
 --- !u!114 &2806233719648674871
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   speed: 0
-  rangeEnemy: 6
+  rangeEnemy: 4
 --- !u!95 &2970553550138417147
 Animator:
   serializedVersion: 5
