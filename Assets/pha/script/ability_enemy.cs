@@ -22,7 +22,7 @@ public class Ability_enemy : MonoBehaviour
     {
         if(HP_e <= 0)   //체력이 0이 되면 사라짐
         {
-            Destroy(gameObject);
+            GetComponent<Death>().enabled = true;
         }
     }
 

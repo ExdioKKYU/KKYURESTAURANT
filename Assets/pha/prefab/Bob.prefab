@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 6637109053215269922}
   - component: {fileID: 3488317714550000140}
   - component: {fileID: 4472890239788276717}
+  - component: {fileID: 8768279401493791905}
   - component: {fileID: 8217096821478469282}
   - component: {fileID: 4657605270015255450}
   - component: {fileID: 5940830297516959612}
   - component: {fileID: 6593408132112557786}
-  - component: {fileID: 8768279401493791905}
   - component: {fileID: 540485429889793193}
   m_Layer: 0
   m_Name: Bob
@@ -164,6 +164,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8768279401493791905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872110243146610562}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8217096821478469282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,18 +233,6 @@ MonoBehaviour:
   AT_sp: 1
   range: 1.8
   ATK_S: 7
---- !u!114 &8768279401493791905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4872110243146610562}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &540485429889793193
 Animator:
   serializedVersion: 5

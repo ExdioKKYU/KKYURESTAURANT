@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 8055602236349721443}
   - component: {fileID: 6921220065998982070}
   - component: {fileID: 6930390744893567612}
+  - component: {fileID: 7468387263183858391}
   - component: {fileID: 6947657071377125259}
   - component: {fileID: 6739439819270393808}
   - component: {fileID: 4946465719441422613}
   - component: {fileID: 2554997262873486664}
   - component: {fileID: 5828587452004252976}
-  - component: {fileID: 7468387263183858391}
   m_Layer: 0
   m_Name: Kim
   m_TagString: Kim
@@ -164,6 +164,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7468387263183858391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5643499955467960296}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6947657071377125259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,15 +254,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7468387263183858391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5643499955467960296}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d062019c7aa19644d898d21c4adfb312, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

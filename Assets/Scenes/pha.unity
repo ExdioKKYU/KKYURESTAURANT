@@ -1821,7 +1821,7 @@ GameObject:
   - component: {fileID: 327525590}
   m_Layer: 9
   m_Name: Line 2
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2886,7 +2886,7 @@ GameObject:
   - component: {fileID: 492184259}
   m_Layer: 9
   m_Name: Line 3
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3110,7 +3110,7 @@ GameObject:
   - component: {fileID: 510812293}
   m_Layer: 9
   m_Name: Line 1
-  m_TagString: Untagged
+  m_TagString: Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3917,7 +3917,7 @@ GameObject:
   - component: {fileID: 842019005}
   - component: {fileID: 842019004}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Table
   m_TagString: Table
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4647,7 +4647,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1408282107}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: Stage
+        m_MethodName: InGame1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5540,7 +5540,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1408282107}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: Stage
+        m_MethodName: InGame1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7548,7 +7548,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e2ceac2da1ef33f45b50350a366f2b65, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3bd080733f5ed8c4ca73f6d6deaee338, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8862,7 +8862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa9075145f151f40ba84914132413f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swipeSpeed: 700
+  swipeSpeed: 300
   smoothTime: 0.3
   minX: -31
   maxX: 31
@@ -8910,7 +8910,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8935,7 +8935,7 @@ Transform:
   m_GameObject: {fileID: 2082381762}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: -0.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9425,12 +9425,12 @@ SceneRoots:
   - {fileID: 348826941}
   - {fileID: 1107505051}
   - {fileID: 1096349139}
-  - {fileID: 842019006}
   - {fileID: 409967280}
   - {fileID: 290931383}
   - {fileID: 1095347229}
   - {fileID: 1847581333}
   - {fileID: 1090570513}
   - {fileID: 6791619}
+  - {fileID: 842019006}
   - {fileID: 2007858040}
   - {fileID: 1216599863}
